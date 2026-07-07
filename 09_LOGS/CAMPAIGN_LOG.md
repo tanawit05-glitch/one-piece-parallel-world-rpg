@@ -1,400 +1,271 @@
 # ONE PIECE PARALLEL WORLD RPG
 
-# CAMPAIGN LOG
+# CAMPAIGN_LOG
 
-Document : CAMPAIGN_LOG
+Document: CAMPAIGN_LOG.md
 
-Version : 1.0
+Version: 2.0
 
-Status : Active
+Status: Canon
 
-Priority : High
+Priority: Critical
 
-Dependencies :
-- RULES.md
-- GAME_MASTER.md
-- SAVE/
-- PLAYER/
-- WORLD/
+Owner: Archivist
 
 ---
 
 # PURPOSE
 
-CAMPAIGN LOG คือบันทึกเหตุการณ์ทั้งหมดของ Campaign
+CAMPAIGN_LOG คือบันทึกประวัติศาสตร์หลักของแคมเปญ
 
-เอกสารนี้ทำหน้าที่เป็น Timeline หลักของโลก
+ทำหน้าที่เป็น Timeline อย่างเป็นทางการของโลก
 
-ทุกเหตุการณ์สำคัญ
+บันทึกเฉพาะเหตุการณ์ที่เกิดขึ้นจริง
 
-ทุกการเปลี่ยนแปลง
+ไม่ใช่เนื้อเรื่อง
 
-ทุกการตัดสินใจของผู้เล่น
+ไม่ใช่บทสรุปการเล่น
 
-ต้องถูกบันทึกไว้ที่นี่
-
----
-
-# DESIGN PRINCIPLE
-
-CAMPAIGN LOG
-
-ไม่ใช่บทสรุปนิยาย
-
-แต่เป็น
-
-ประวัติศาสตร์ของโลก
-
-ทุกข้อความ
-
-ต้องเขียนแบบเป็นกลาง
-
-ไม่ใส่ความคิดเห็น
-
-ไม่ใส่อารมณ์
-
-ไม่ใส่การตีความ
+ไม่ใช่ฐานข้อมูล
 
 ---
 
-# WHEN TO UPDATE
+# RESPONSIBILITY
 
-อัปเดต
+Archivist เป็นผู้ดูแลเอกสารนี้เพียงผู้เดียว
 
-หลังจบทุก Episode
+Game Master ไม่มีสิทธิ์แก้ไข
+
+Player ไม่มีสิทธิ์แก้ไข
+
+---
+
+# DEPENDENCIES
+
+- CURRENT_STATE.md
+- WORLD_STATE.md
+- SESSION_SUMMARY.md
+- NPC Database
+- World Database
+- Crew Database
+- Save Files
+
+---
+
+# UPDATE RULE
+
+อัปเดตเมื่อจบ Episode เท่านั้น
 
 ห้ามอัปเดตระหว่างเล่น
 
----
+ทุก Episode ต้องมีเพียง 1 Entry
 
-# WHAT TO RECORD
+ห้ามลบ Episode เก่า
 
-ทุก Episode
+ห้ามแก้ไขประวัติย้อนหลัง
 
-ควรบันทึก
-
-- วันที่ในโลก
-- Episode
-- Location
-- เป้าหมาย
-- เหตุการณ์สำคัญ
-- ผลลัพธ์
-- NPC สำคัญ
-- Faction ที่เกี่ยวข้อง
-- ของสำคัญที่ได้รับ
-- Devil Fruit ที่พบ
-- ค่าหัวที่เปลี่ยน
-- ความเสียหาย
-- การเปลี่ยนแปลงของโลก
+หากข้อมูลผิด ให้เพิ่มหมายเหตุ (Revision)
 
 ---
 
 # WRITING STYLE
 
-ใช้ข้อความสั้น
-
-ตรงประเด็น
-
 เขียนแบบรายงาน
 
-ตัวอย่าง
+ใช้ภาษากลาง
 
-ถูก
+ไม่ใส่อารมณ์
 
-Marine Base ถูกทำลาย
+ไม่ใส่ความคิดเห็น
 
-ผิด
+ไม่ตีความเหตุการณ์
 
-Marine Base ถูกทำลายอย่างน่าเศร้า
-
----
-
-# CANON
-
-CAMPAIGN LOG
-
-ถือเป็น
-
-Canon
-
-ของ Campaign
-
-หากข้อมูลในเอกสารอื่น
-
-ขัดกับ CAMPAIGN LOG
-
-ให้ตรวจสอบ SAVE ล่าสุด
+บันทึกเฉพาะข้อเท็จจริง
 
 ---
 
-# EPISODE FORMAT
+# RECORD FORMAT
 
-ใช้ Template นี้ทุก Episode
+## Episode
 
---------------------------------------------------
+Episode:
 
-## Episode :
+Title:
 
-### World Date
+World Day:
 
--
+Arc:
+
+---
 
 ### Location
 
 -
 
+---
+
 ### Objective
 
 -
+
+---
 
 ### Summary
 
 -
 
+---
+
 ### Major Events
 
 -
+
+-
+
+-
+
+---
 
 ### Important NPCs
 
 -
 
-### Important Factions
+---
+
+### Factions Involved
 
 -
+
+---
 
 ### Battles
 
 -
 
-### Devil Fruits
-
--
+---
 
 ### Rewards
 
 -
 
+---
+
+### Devil Fruits
+
+-
+
+---
+
+### Ships
+
+-
+
+---
+
 ### Bounty Changes
 
 -
 
-### World Changes
-
--
+---
 
 ### Crew Changes
 
 -
 
-### Player Growth
+---
+
+### Player Progress
 
 -
+
+---
+
+### World Changes
+
+-
+
+---
 
 ### Notes
 
 -
 
---------------------------------------------------
+---
 
-# WORLD CHANGE
+# RECORDING RULES
 
-หากเหตุการณ์ใด
+บันทึกเฉพาะสิ่งที่เกิดขึ้นจริง
 
-ส่งผลต่อโลก
+ไม่บันทึกสิ่งที่ "เกือบเกิด"
 
-ต้องระบุไว้เสมอ
+ไม่บันทึกการคาดเดา
 
-ตัวอย่าง
-
-- เมืองถูกทำลาย
-
-- รัฐบาลสร้างฐานใหม่
-
-- จักรพรรดิเปลี่ยนอาณาเขต
-
-- กลุ่มโจรสลัดล่มสลาย
-
-- ประเทศเปลี่ยนกษัตริย์
-
-- ค้นพบเกาะใหม่
+ไม่บันทึกข้อมูลที่ถูกยกเลิก
 
 ---
 
-# NPC CHANGE
+# CONTINUITY
 
-หาก NPC
+ข้อมูลทุก Episode ต้องต่อเนื่องกัน
 
-เกิดการเปลี่ยนแปลง
+หากเหตุการณ์ส่งผลต่อโลก
 
-ให้บันทึก
+ต้องอัปเดต WORLD_STATE.md
 
-ตัวอย่าง
+หาก NPC เปลี่ยนแปลง
 
-- เสียชีวิต
+ต้องอัปเดต NPC Database
 
-- เลื่อนตำแหน่ง
+หากลูกเรือเปลี่ยนแปลง
 
-- ถูกจับ
+ต้องอัปเดต Crew Database
 
-- เข้าร่วมลูกเรือ
+หากผู้เล่นเปลี่ยนแปลง
 
-- ทรยศ
-
-- เปลี่ยนฝ่าย
+ต้องอัปเดต CURRENT_STATE.md
 
 ---
 
-# PLAYER CHANGE
+# UPDATE ORDER
 
-บันทึกเฉพาะ
+1. CURRENT_STATE.md
 
-สิ่งที่เปลี่ยนจริง
+2. WORLD_STATE.md (ถ้ามี)
 
-ตัวอย่าง
+3. NPC Database
 
-- ได้รับตำแหน่งใหม่
+4. World Database
 
-- ได้ผลปีศาจ
+5. Crew Database
 
-- ฝึกฮาคิ
+6. CAMPAIGN_LOG.md
 
-- สูญเสียอวัยวะ
+7. EPISODE_LOG.md
 
-- เปลี่ยนความฝัน
+8. PLAYER_HISTORY.md
 
-- ได้รับค่าหัว
+9. CREW_HISTORY.md
 
----
+10. NEWS_ARCHIVE.md
 
-# CREW CHANGE
-
-หากลูกเรือ
-
-เข้า
-
-ออก
-
-เสียชีวิต
-
-หรือเปลี่ยนตำแหน่ง
-
-ต้องบันทึก
-
----
-
-# SHIP CHANGE
-
-บันทึก
-
-- เรือใหม่
-
-- เรือจม
-
-- อัปเกรด
-
-- ซ่อมแซม
-
-- เปลี่ยนชื่อ
-
----
-
-# ITEM CHANGE
-
-บันทึกเฉพาะ
-
-Rare Item
-
-Legendary Item
-
-Ancient Item
-
-หรือของที่มีผลต่อเนื้อเรื่อง
-
----
-
-# BOUNTY CHANGE
-
-ทุกครั้งที่ค่าหัวเปลี่ยน
-
-ต้องระบุ
-
-Old
-
-↓
-
-New
-
-พร้อมเหตุผล
-
----
-
-# DEVIL FRUIT
-
-หากพบผลปีศาจ
-
-ให้ระบุ
-
-- ชื่อผล
-
-- ประเภท
-
-- ผู้ครอบครอง
-
-- สถานะ
-
-เช่น
-
-พบ
-
-ถูกกิน
-
-สูญหาย
-
-ถูกขโมย
-
----
-
-# WORLD EVENTS
-
-หากเกิดเหตุการณ์ระดับโลก
-
-ให้บันทึกแยก
-
-ตัวอย่าง
-
-- Buster Call
-
-- สงคราม
-
-- โรคระบาด
-
-- ภัยธรรมชาติ
-
-- การปฏิวัติ
-
----
-
-# HISTORY
-
-CAMPAIGN LOG
-
-ห้ามลบข้อมูลเก่า
-
-ห้ามแก้ไข Episode เก่า
-
-หากมีข้อมูลเพิ่มเติม
-
-ให้เพิ่มหมายเหตุ
-
-โดยไม่เปลี่ยนประวัติเดิม
+11. SESSION_SUMMARY.md
 
 ---
 
 # GOLDEN RULE
 
-โลกต้องจำ
+CAMPAIGN_LOG คือประวัติศาสตร์อย่างเป็นทางการของ Campaign
 
-ทุกการกระทำ
+หากข้อมูลขัดแย้งกับเอกสารอื่น
 
-แม้ผู้เล่นจะลืม
+ให้ตรวจสอบตามลำดับ
+
+1. CURRENT_STATE.md
+
+2. Save ล่าสุด
+
+3. CAMPAIGN_LOG.md
+
+4. Database ที่เกี่ยวข้อง
+
+GitHub คือ Source of Truth สูงสุด

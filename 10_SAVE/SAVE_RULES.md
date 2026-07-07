@@ -1,460 +1,1217 @@
-# ONE PIECE PARALLEL WORLD RPG
+# PROJECT ASTER ENGINE
 
 # SAVE RULES
 
-Document : SAVE_RULES
+Version: 2.0
 
-Version : 1.0
+Status: Canon
 
-Status : Active
+Priority: Critical
 
-Priority : Highest
-
-Dependencies :
-- RULES.md
-- GAME_MASTER.md
-- DICE.md
-- CAMPAIGN_LOG.md
-- EPISODE_LOG.md
+Owner: Archivist
 
 ---
 
 # PURPOSE
 
-SAVE SYSTEM
+The Save System
 
-คือระบบบันทึกสถานะปัจจุบันของโลก
+maintains
 
-เอกสารภายในโฟลเดอร์ SAVE
+the current state
 
-ถือเป็นข้อมูลล่าสุดของ Campaign
+of the campaign.
 
-AI ต้องใช้ข้อมูลจากโฟลเดอร์นี้
+Save Files
 
-เป็นข้อมูลหลักในการเริ่ม Episode ใหม่
+represent
+
+the latest
+
+official state
+
+of the world.
+
+Every new session
+
+must begin
+
+by loading
+
+the Save Files.
+
+Save Files
+
+are not history.
+
+Save Files
+
+are snapshots
+
+of the current world.
 
 ---
 
 # DESIGN PHILOSOPHY
 
-SAVE
+History
 
-ไม่ใช่ประวัติศาสตร์
+answers
 
-SAVE
+"What happened?"
 
-คือภาพปัจจุบันของโลก
+Save
 
-ส่วนประวัติทั้งหมด
+answers
 
-เก็บไว้ใน
+"What exists now?"
 
-09_LOGS
+History
+
+belongs
+
+inside
+
+09_LOGS.
+
+Current State
+
+belongs
+
+inside
+
+10_SAVE.
+
+Never mix
+
+History
+
+with
+
+Current State.
+
+---
+
+# OBJECTIVES
+
+The Save System
+
+must
+
+- Preserve continuity
+
+- Preserve consistency
+
+- Preserve Canon
+
+- Preserve world state
+
+- Preserve player progress
+
+- Preserve NPC state
+
+- Preserve faction state
+
+- Preserve economy
+
+- Preserve relationships
+
+The Save System
+
+must never
+
+record
+
+unnecessary history.
 
 ---
 
 # SAVE HIERARCHY
 
-ข้อมูลในโฟลเดอร์ SAVE
+Priority Order
 
-ถือเป็นข้อมูลล่าสุด
+CURRENT_STATE.md
 
-หากข้อมูลในเอกสารอื่น
+↓
 
-ไม่ตรงกับ SAVE
+Current Save Files
 
-ให้ถือ SAVE เป็นหลัก
+↓
 
-ยกเว้น
+WORLD_STATE.md
 
-CAMPAIGN_LOG
+↓
 
-ซึ่งเป็น Timeline ของโลก
+Databases
 
----
+↓
 
-# WHEN TO SAVE
+History Logs
 
-AI
+↓
 
-ต้องอัปเดต SAVE
+Archives
 
-หลังจบทุก Episode
+Higher priority
 
-เพียงครั้งเดียว
+always overrides
 
-ห้ามอัปเดต
+lower priority.
 
-ระหว่าง Episode
+History
 
-เว้นแต่
+never overrides
 
-ผู้เล่นร้องขอ
-
----
-
-# SAVE PRINCIPLES
-
-SAVE
-
-ต้องสะท้อน
-
-สถานะล่าสุด
-
-ของโลก
-
-ไม่ใช่
-
-เหตุการณ์ทั้งหมด
-
-ตัวอย่าง
-
-ถูก
-
-Player Location
-
-Iron Island
-
-ผิด
-
-Player เคยมาที่ Iron Island เมื่อ Episode 5
-
-ข้อมูลแบบนั้น
-
-อยู่ใน LOG
-
-ไม่ใช่ SAVE
-
----
-
-# WHAT TO SAVE
-
-ทุก Episode
-
-AI ต้องตรวจสอบ
-
-ว่ามีสิ่งใดเปลี่ยนแปลงหรือไม่
-
-หากไม่มี
-
-ไม่จำเป็นต้องแก้ไขไฟล์
+Current State.
 
 ---
 
 # SAVE FILES
 
-CURRENT_WORLD.md
+CURRENT_STATE.md
 
-สถานะปัจจุบันของโลก
+Master Snapshot
 
 ---
 
 CURRENT_PLAYER.md
 
-สถานะผู้เล่น
+Current Player Status
 
 ---
 
 CURRENT_CREW.md
 
-สถานะลูกเรือ
+Current Crew Status
 
 ---
 
-CURRENT_SHIPS.md
+CURRENT_WORLD.md
 
-สถานะเรือ
-
----
-
-CURRENT_FACTIONS.md
-
-สถานะองค์กร
+Current World Status
 
 ---
 
 CURRENT_NPCS.md
 
-สถานะ NPC
+Current NPC Status
 
 ---
 
 CURRENT_ISLANDS.md
 
-สถานะเกาะที่ได้รับผลกระทบ
+Current Island Status
+
+---
+
+CURRENT_FACTIONS.md
+
+Current Faction Status
 
 ---
 
 CURRENT_ITEMS.md
 
-ของสำคัญ
+Current Important Items
 
 ---
 
 CURRENT_DEVIL_FRUITS.md
 
-ผลปีศาจสำคัญ
+Current Devil Fruit Owners
 
 ---
 
-# UPDATE RULE
+CURRENT_SHIPS.md
 
-AI
-
-ต้องอัปเดต
-
-เฉพาะไฟล์
-
-ที่ได้รับผลกระทบ
-
-ตัวอย่าง
-
-ผู้เล่นบาดเจ็บ
-
-↓
-
-CURRENT_PLAYER
+Current Ship Status
 
 ---
 
-เรือเสียหาย
+WORLD_STATE.md
 
-↓
-
-CURRENT_SHIPS
+Global World Status
 
 ---
 
-NPC ตาย
+# SAVE TRIGGER
 
-↓
+The Save System
 
-CURRENT_NPCS
+is activated
 
-CURRENT_WORLD
+only when
 
-หากมีผลระดับโลก
+one of the following
 
----
+conditions
 
-เมืองถูกทำลาย
+is true.
 
-↓
+- Player requests Save
 
-CURRENT_ISLANDS
+- Episode ends
 
-CURRENT_WORLD
+- Session ends
 
----
+- Auto Save Event
 
-ค่าหัวเพิ่ม
+No Save
 
-↓
+may occur
 
-CURRENT_PLAYER
+during active gameplay
 
-CURRENT_FACTIONS
+unless
 
----
-
-สมาชิกใหม่
-
-↓
-
-CURRENT_CREW
+explicitly requested.
 
 ---
 
-# DATA CONSISTENCY
+# SAVE PROCESS
 
-ข้อมูลทุกไฟล์
+Player
 
-ต้องสอดคล้องกัน
+↓
 
-ตัวอย่าง
+Requests Save
 
-หาก NPC เสียชีวิต
+↓
 
-CURRENT_NPCS
+Game Master
 
-ต้องเปลี่ยน
+creates
 
-และ
+SESSION_UPDATE.md
 
-CURRENT_FACTIONS
+↓
 
-อาจต้องเปลี่ยน
+Archivist
 
-หาก NPC มีตำแหน่งสำคัญ
+validates
+
+SESSION_UPDATE.md
+
+↓
+
+Archivist
+
+updates
+
+Save Files
+
+↓
+
+Archivist
+
+updates
+
+Databases
+
+↓
+
+Archivist
+
+updates
+
+History Logs
+
+↓
+
+Validation
+
+↓
+
+SAVE COMPLETE
 
 ---
 
-# DO NOT SAVE
+# SAVE PRINCIPLES
 
-ไม่ต้องบันทึก
+Every Save
 
-บทสนทนา
+must
 
-การบรรยาย
+represent
 
-รายละเอียดการต่อสู้
+the latest
 
-การทอยเต๋า
+official state
 
-เหตุการณ์ย่อย
+of the world.
 
-ข้อมูลเหล่านี้
+Do not
 
-อยู่ใน LOG
+record
 
----
+past events.
 
-# PLAYER REQUEST
+Do not
 
-หากผู้เล่น
+record
 
-ร้องขอ
+future events.
 
-Save Game
+Do not
 
-AI
+record
 
-ต้องอัปเดต
+speculation.
 
-ทุกไฟล์
+Do not
 
-ที่ได้รับผลกระทบ
+record
 
-ก่อนเริ่ม Episode ถัดไป
+cancelled actions.
 
----
+Only
 
-# LOADING
+confirmed gameplay
 
-เมื่อเริ่ม Session ใหม่
-
-AI
-
-ต้องอ่าน
-
-CURRENT_WORLD
-
-↓
-
-CURRENT_PLAYER
-
-↓
-
-CURRENT_CREW
-
-↓
-
-CURRENT_SHIPS
-
-↓
-
-CURRENT_FACTIONS
-
-↓
-
-CURRENT_NPCS
-
-↓
-
-CURRENT_ISLANDS
-
-↓
-
-CURRENT_ITEMS
-
-↓
-
-CURRENT_DEVIL_FRUITS
-
-ตามลำดับนี้
+may be saved.
 
 ---
 
-# CONSISTENCY CHECK
+# CHANGE DETECTION
 
-ก่อนเริ่ม Episode
+Before updating
 
-AI ควรตรวจสอบ
+Archivist
+
+must determine
+
+which data
+
+actually changed.
+
+If nothing changed
+
+the file
+
+must not
+
+be modified.
+
+Only affected files
+
+are updated.
+
+---
+
+# UPDATE RULES
+
+Example
+
+Player HP changed
+
+↓
+
+CURRENT_PLAYER.md
+
+---
+
+Crew gained
+
+a new member
+
+↓
+
+CURRENT_CREW.md
+
+---
+
+Ship damaged
+
+↓
+
+CURRENT_SHIPS.md
+
+---
+
+NPC died
+
+↓
+
+CURRENT_NPCS.md
+
+WORLD_STATE.md
+
+(if applicable)
+
+---
+
+Island destroyed
+
+↓
+
+CURRENT_ISLANDS.md
+
+CURRENT_WORLD.md
+
+WORLD_STATE.md
+
+---
+
+Player bounty changed
+
+↓
+
+CURRENT_PLAYER.md
+
+CURRENT_FACTIONS.md
+
+CURRENT_STATE.md
+
+---
+
+Devil Fruit ownership changed
+
+↓
+
+CURRENT_DEVIL_FRUITS.md
+
+CURRENT_PLAYER.md
+
+CURRENT_NPCS.md
+
+---
+
+Major political event
+
+↓
+
+CURRENT_WORLD.md
+
+WORLD_STATE.md
+
+CURRENT_FACTIONS.md
+
+---
+
+# LOAD ORDER
+
+Every new session
+
+must begin
+
+with
+
+CURRENT_STATE.md
+
+↓
+
+CURRENT_PLAYER.md
+
+↓
+
+CURRENT_CREW.md
+
+↓
+
+CURRENT_WORLD.md
+
+↓
+
+CURRENT_NPCS.md
+
+↓
+
+CURRENT_ISLANDS.md
+
+↓
+
+CURRENT_FACTIONS.md
+
+↓
+
+CURRENT_ITEMS.md
+
+↓
+
+CURRENT_DEVIL_FRUITS.md
+
+↓
+
+CURRENT_SHIPS.md
+
+↓
+
+WORLD_STATE.md
+
+No gameplay
+
+may begin
+
+until
+
+all required files
+
+have been loaded.
+
+---
+
+# LOAD VALIDATION
+
+Before gameplay
+
+Archivist verifies
+
+- Save Files exist
+
+- Episode Number
+
+- World Day
+
+- Current Arc
+
+- Current Island
+
+- Current Objectives
 
 - Player Location
 
 - Ship Location
 
-- Crew Members
+- Crew Status
 
-- Current Arc
+- Database Integrity
 
-- Current World State
+If validation fails
 
-- Active World Events
+Stop immediately.
 
-- Current Objectives
+Do not
 
-หากพบข้อมูลขัดแย้ง
+start gameplay.
 
-ให้ใช้
+---
 
-SAVE
+# DATA CONSISTENCY
 
-เป็นข้อมูลอ้างอิงหลัก
+Every Save
+
+must preserve
+
+complete consistency
+
+between
+
+Save Files
+
+Databases
+
+History Logs
+
+No file
+
+may contain
+
+information
+
+that conflicts
+
+with another file.
+
+Whenever
+
+one value changes
+
+all related files
+
+must also
+
+be updated.
+
+Example
+
+NPC dies
+
+↓
+
+CURRENT_NPCS.md
+
+↓
+
+CURRENT_FACTIONS.md
+
+↓
+
+CURRENT_WORLD.md
+
+↓
+
+WORLD_STATE.md
+
+↓
+
+History Logs
+
+---
+
+# WHAT TO SAVE
+
+Save only
+
+the current state
+
+of
+
+Player
+
+Crew
+
+NPCs
+
+Ships
+
+Items
+
+Devil Fruits
+
+Factions
+
+World
+
+Islands
+
+Economy
+
+Relationships
+
+Active Objectives
+
+Current Location
+
+Current Conditions
+
+Current Reputation
+
+Current Bounty
+
+Current Ownership
+
+Current Status
+
+---
+
+# WHAT NOT TO SAVE
+
+Never save
+
+Dialogue
+
+Story narration
+
+Dice rolls
+
+Combat logs
+
+Developer Notes
+
+Internal AI reasoning
+
+Alternative outcomes
+
+Cancelled actions
+
+Test sessions
+
+Debug information
+
+What-if scenarios
+
+Future predictions
+
+Personal opinions
+
+These belong
+
+inside
+
+History Logs
+
+or
+
+Developer Documents
+
+Never
+
+inside
+
+Save Files.
+
+---
+
+# PLAYER REQUEST
+
+When
+
+the player requests
+
+Save
+
+Game Master
+
+must immediately
+
+stop gameplay
+
+and generate
+
+SESSION_UPDATE.md
+
+Only after
+
+Archivist
+
+has completed
+
+the Save Process
+
+may
+
+the next session
+
+begin.
+
+---
+
+# AUTO SAVE
+
+Auto Save
+
+may occur
+
+only when
+
+- Episode Complete
+
+- Arc Complete
+
+- Major World Event
+
+- Major Story Milestone
+
+- Manual Developer Trigger
+
+Auto Save
+
+must follow
+
+the same validation
+
+as
+
+Manual Save.
 
 ---
 
 # SAVE FREQUENCY
 
-ปกติ
+Recommended
 
-บันทึก
+One Save
 
-1 ครั้ง
+per Episode.
 
-ต่อ 1 Episode
+Additional Saves
 
-หาก Episode ยาวมาก
+are allowed
 
-AI
+only when
 
-สามารถสร้าง
+required
 
-Mid-Episode Save
+by gameplay
 
-ได้
+or
 
-เมื่อเหมาะสม
+developer instructions.
 
----
+Avoid
 
-# AI RESPONSIBILITIES
+unnecessary saves.
 
-AI ต้อง
+Every Save
 
-- รักษาความถูกต้องของ SAVE
+should represent
 
-- ไม่ลืมอัปเดตข้อมูล
+a meaningful
 
-- ไม่สร้างข้อมูลย้อนหลัง
+change
 
-- ไม่ลบข้อมูลโดยไม่มีเหตุผล
-
-- ตรวจสอบความสอดคล้องของทุกไฟล์
+to the world.
 
 ---
 
-# GOLDEN RULE
+# SAVE TRANSACTION
 
-LOG
+Every Save
 
-บอกว่า
+must be Atomic.
 
-"เกิดอะไรขึ้น"
+Either
 
-SAVE
+every required file
 
-บอกว่า
+is updated
 
-"โลกเป็นอย่างไรในตอนนี้"
+successfully
+
+or
+
+nothing
+
+is updated.
+
+Partial Saves
+
+are forbidden.
+
+Rollback
+
+must occur
+
+before
+
+leaving
+
+an inconsistent state.
+
+---
+
+# ERROR RECOVERY
+
+If
+
+any Save Process
+
+fails
+
+Archivist
+
+must immediately
+
+stop
+
+all updates.
+
+Do not
+
+continue
+
+saving.
+
+Restore
+
+the previous
+
+validated Save State.
+
+Generate
+
+an Error Report.
+
+The report
+
+must include
+
+- Error Type
+
+- Failed Step
+
+- Affected Files
+
+- Validation Status
+
+- Recovery Status
+
+No gameplay
+
+may continue
+
+until
+
+the Save System
+
+returns
+
+to
+
+a valid state.
+
+---
+
+# SAVE VALIDATION
+
+Before
+
+SAVE COMPLETE
+
+Archivist
+
+must verify
+
+- Timeline Integrity
+
+- Canon Integrity
+
+- Player Integrity
+
+- Crew Integrity
+
+- NPC Integrity
+
+- World Integrity
+
+- Island Integrity
+
+- Ship Integrity
+
+- Item Integrity
+
+- Devil Fruit Ownership
+
+- Faction Integrity
+
+- Economy Integrity
+
+- Bounty Integrity
+
+- Relationship Integrity
+
+- Quest Integrity
+
+- Active Objectives
+
+- Current Locations
+
+- No Duplicate IDs
+
+- No Missing References
+
+- No Broken Links
+
+Every validation
+
+must pass
+
+before
+
+the Save
+
+is accepted.
+
+---
+
+# SAVE REPORT
+
+After
+
+every successful Save
+
+generate
+
+SAVE REPORT
+
+==================================================
+
+SAVE REPORT
+
+Episode :
+
+World Day :
+
+Current Arc :
+
+Current Island :
+
+Save Version :
+
+Save Time :
+
+---
+
+Updated Save Files
+
+-
+
+-
+
+-
+
+---
+
+Updated Databases
+
+-
+
+-
+
+-
+
+---
+
+Updated Logs
+
+-
+
+-
+
+-
+
+---
+
+Validation
+
+Passed / Failed
+
+---
+
+Warnings
+
+-
+
+---
+
+Conflicts
+
+None / Listed
+
+---
+
+Rollback
+
+Yes / No
+
+==================================================
+
+---
+
+# SUCCESS CONDITIONS
+
+A Save
+
+is successful
+
+only if
+
+- Validation Passed
+
+- No Conflicts
+
+- No Timeline Errors
+
+- No Canon Violations
+
+- No Missing References
+
+- No Duplicate IDs
+
+- Every affected file updated
+
+- Save Report generated
+
+If any condition
+
+fails
+
+the Save
+
+is considered
+
+Failed.
+
+---
+
+# GOLDEN RULES
+
+Save Files
+
+always represent
+
+the present.
+
+History Logs
+
+always represent
+
+the past.
+
+Databases
+
+must always
+
+agree
+
+with
+
+Save Files.
+
+Never
+
+guess.
+
+Never
+
+invent.
+
+Never
+
+rewrite
+
+history.
+
+Never
+
+modify
+
+completed Episodes.
+
+Never
+
+change
+
+player decisions.
+
+Never
+
+skip
+
+validation.
+
+Rollback
+
+before
+
+overwrite.
+
+Validation
+
+before
+
+Save.
+
+Consistency
+
+before
+
+speed.
+
+Canon
+
+before
+
+convenience.
+
+GitHub
+
+is always
+
+the final
+
+Source of Truth.
+
+---
+
+# END OF DOCUMENT
