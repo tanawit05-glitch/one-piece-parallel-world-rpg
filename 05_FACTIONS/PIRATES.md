@@ -1,440 +1,183 @@
 # PIRATES
 
----
+## Purpose
 
-# Purpose
-
-`PIRATES.md` defines the simulation rules governing pirate organizations throughout PROJECT ASTER ENGINE.
-
-Pirates are one of the world's primary independent forces.
-
-Unlike governments, pirate organizations pursue their own ambitions without centralized authority.
-
-They compete for wealth, territory, influence, freedom, and survival.
-
-This document defines how pirate organizations function as autonomous simulation entities.
+Defines how pirate organizations operate, grow, compete, and survive throughout the world.
 
 ---
 
-# Scope
+## Core Mission
 
-This document defines:
-
-- Pirate Organizations
-- Pirate Behavior
-- Pirate Objectives
-- Crew Formation
-- Pirate Expansion
-- Pirate Territories
-- Pirate Operations
-- Pirate Alliances
-- Pirate Conflicts
-- Pirate Decline
-
-This document does not define:
-
-- Individual Pirate NPCs
-- Individual Pirate Crews
-- Devil Fruits
-- Ships
-- Combat
-
-Those systems are defined elsewhere.
+- Pursue freedom
+- Build reputation
+- Acquire wealth
+- Protect the crew
+- Expand influence
+- Survive in the New World
 
 ---
 
-# Core Principle
+## Organization
 
-Pirates pursue freedom above all else.
+Captain
 
-Every pirate organization chooses its own path.
+↓
 
-No central authority governs all pirates.
+Officers
 
-Pirate organizations constantly evolve.
+↓
 
----
+Core Crew
 
-# Organizational Identity
+↓
 
-Pirate organizations are:
+Crew Members
 
-- Independent
-- Adaptive
-- Opportunistic
-- Competitive
-- Resource Driven
-- Persistent
+↓
 
-Every pirate organization develops its own identity.
+Allied Crews
+
+Every pirate crew is independent.
 
 ---
 
-# Organizational Objectives
-
-Primary Objectives
-
-- Acquire Wealth
-- Expand Influence
-- Protect Crew
-- Increase Reputation
-- Ensure Survival
-
-Secondary Objectives
-
-- Recruit Members
-- Obtain Ships
-- Secure Supplies
-- Discover Rare Treasures
-- Establish Safe Harbors
-
-Long-Term Objectives
-
-- Dominate Territory
-- Become a Legendary Crew
-- Build Pirate Networks
-- Create Independent Strongholds
-
-Objectives may change according to world conditions.
-
----
-
-# Crew Formation
-
-Every pirate organization begins as a crew.
-
-Crews may:
+## Responsibilities
 
 - Recruit members
-- Split apart
-- Merge together
-- Disband
-- Evolve into larger organizations
-
-Crew formation follows natural world conditions.
-
----
-
-# Recruitment
-
-Pirates recruit through:
-
-- Reputation
-- Shared Ideology
-- Friendship
-- Opportunity
-- Wealth
-- Coercion
-
-Recruitment success depends upon organizational reputation.
+- Explore the sea
+- Acquire resources
+- Protect the crew
+- Develop the fleet
+- Establish pirate bases
+- Expand influence
 
 ---
 
-# Resources
-
-Pirate organizations require resources.
-
-Examples include:
+## Resources
 
 - Ships
+- Crew
 - Money
 - Food
 - Weapons
-- Ammunition
 - Medical Supplies
-- Navigational Charts
 - Information
+- Territory
 
-Resources are always limited.
-
----
-
-# Pirate Bases
-
-Some pirate organizations establish operational bases.
-
-Bases may function as:
-
-- Hideouts
-- Supply Depots
-- Shipyards
-- Recruitment Centers
-- Intelligence Networks
-
-Bases require maintenance.
-
-Bases may be discovered.
+Resources are limited and must be managed.
 
 ---
 
-# Pirate Territory
+## Operations
 
-Powerful pirate organizations may influence territory.
+Pirates may:
 
-Influence may include:
-
-- Ports
-- Islands
-- Trade Routes
-- Smuggling Routes
-- Hidden Harbors
-
-Territorial control is never permanent.
-
----
-
-# Pirate Operations
-
-Pirates continuously perform operations.
-
-Examples include:
-
-- Raids
-- Smuggling
-- Treasure Hunting
-- Recruitment
-- Exploration
-- Espionage
+- Raid
+- Explore
+- Hunt treasure
+- Smuggle goods
 - Trade
-- Ship Repair
+- Recruit
+- Repair ships
+- Form alliances
 
 Operations consume time and resources.
 
 ---
 
-# Conflict
+## Territory
 
-Pirates frequently compete.
+Pirate influence may extend over:
 
-Possible conflicts include:
+- Islands
+- Ports
+- Hidden Bases
+- Trade Routes
+- Sea Routes
 
-- Territory
-- Treasure
-- Revenge
-- Resources
-- Leadership
-- Alliances
-
-Conflict is expected.
-
-Peace is temporary.
+Territory is never permanent.
 
 ---
 
-# Alliances
+## Relations
 
-Pirate organizations may cooperate.
+Friendly
 
-Possible cooperation includes:
+- Allied Crews
 
-- Temporary Alliances
-- Resource Sharing
-- Joint Operations
-- Intelligence Exchange
+Hostile
 
-Alliances may dissolve naturally.
+- Marines
+- World Government
+
+Variable
+
+- Emperors
+- Warlords
+- Cross Guild
+- Revolutionary Army
+- Underworld
+
+Relationships change according to world events.
 
 ---
 
-# Reputation
+## Growth
 
-Pirate organizations possess public reputation.
+Growth depends on:
 
-Reputation affects:
-
+- Reputation
 - Recruitment
-- Fear
-- Negotiation
-- Marine Response
-- Bounty Development
+- Wealth
+- Successful operations
+- Territorial expansion
 
-Reputation changes over time.
-
----
-
-# Intelligence
-
-Pirates gather information through:
-
-- Informants
-- Merchants
-- Newspapers
-- Underworld Contacts
-- Former Marines
-- Travelers
-- Den Den Mushi
-
-Information is often incomplete.
+Growth increases both influence and responsibility.
 
 ---
 
-# Organizational Growth
+## Decline
 
-Growth may occur through:
-
-- Recruitment
-- Successful Operations
-- Increased Wealth
-- Territorial Expansion
-- Political Influence
-
-Growth increases responsibility.
-
----
-
-# Organizational Decline
-
-Decline may result from:
+A pirate crew may decline because of:
 
 - Defeat
-- Starvation
-- Resource Loss
+- Resource shortages
+- Crew losses
 - Betrayal
-- Leadership Failure
-- Marine Pressure
+- Marine pressure
+- Leadership failure
 
-Decline should occur naturally.
-
----
-
-# Adaptation
-
-Pirates continuously adapt.
-
-Possible adaptations include:
-
-- Changing Routes
-- Relocating Bases
-- Recruiting Specialists
-- Purchasing Better Ships
-- Forming Alliances
-- Avoiding Marine Patrols
-
-Adaptation improves survival.
+Decline affects the entire organization.
 
 ---
 
-# Simulation Loop
+## Simulation Rules
 
-Every Timeline Update
-
-Observe World
-
-↓
-
-Gather Information
-
-↓
-
-Evaluate Opportunities
-
-↓
-
-Evaluate Threats
-
-↓
-
-Allocate Resources
-
-↓
-
-Execute Operations
-
-↓
-
-Record Consequences
-
-↓
-
-Update Organization
-
-↓
-
-Repeat
+- Operate independently
+- Never possess perfect information
+- Respect logistics
+- Respect travel time
+- Adapt to changing conditions
+- Pursue opportunities based on risk and reward
 
 ---
 
-# AI Game Master Responsibilities
+## AI Rules
 
-The AI must:
+Every pirate crew has its own personality, goals, and code.
 
-- Simulate pirate activity continuously.
-- Respect logistical limitations.
-- Preserve organizational identity.
-- Apply realistic risk assessment.
-- Maintain pirate independence.
-
-The AI must never:
-
-- Give pirates perfect information.
-- Ignore travel limitations.
-- Ignore supply shortages.
-- Protect pirate organizations through plot armor.
-- Force pirate actions without logical motivation.
+No pirate organization should behave identically to another.
 
 ---
 
-# Dependencies
-
-Required Documents:
-
-- WORLD.md
-- TIMELINE.md
-- FACTIONS.md
-- NEWS_SYSTEM.md
-- WORLD_EVENTS.md
-
-Referenced Documents:
+## Dependencies
 
 - MARINES.md
-- BOUNTY_SYSTEM.md
-- UNDERWORLD.md
+- EMPERORS.md
+- WARLORDS.md
+- CROSS_GUILD.md
 - TERRITORY.md
-- OPERATIONS.md
-
-Child Documents:
-
-None
-
-Future Extensions:
-
-- Pirate Fleet System
-- Pirate Alliance System
-- Pirate Strongholds
-- Pirate Economy
-
----
-
-# Integration
-
-Integrated Systems:
-
-- DICE.md
-- COMBAT.md
 - REPUTATION.md
-- RELATIONSHIP.md
-- SAVE_FORMAT.md
-
----
-
-# Design Principles
-
-Freedom creates ambition.
-
-Ambition creates conflict.
-
-Conflict creates legends.
-
-Legends reshape the world.
-
-Every pirate organization must earn its place through action.
-
----
-
-# Source of Truth
-
-`PIRATES.md`
-
-is the authoritative specification governing the behavior, organization, objectives, expansion, conflict, and long-term simulation of pirate organizations throughout PROJECT ASTER ENGINE.
-
-All future pirate-related systems must inherit the rules defined in this document.
+- BOUNTIES.md
+- WORLD_EVENTS.md
+- NEWS_SYSTEM.md

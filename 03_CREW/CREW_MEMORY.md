@@ -113,3 +113,70 @@ Game Master ต้อง:
 ---
 
 # END OF FILE
+
+---
+
+# CURRENT CREW MEMORY
+
+
+## Shared Memories
+
+ไม่มี
+
+
+---
+
+## Personal Memories
+
+
+### Ray Valence
+
+ไม่มี
+
+
+### Jose Whiteman
+
+- ถูกควบคุมชีวิตตั้งแต่วัยเด็ก
+- ถูกฝึกโดย CP เป็นเวลา 12 ปี
+- เหตุการณ์กับพ่อเป็นบาดแผลสำคัญ
+
+
+---
+
+## Trauma Memories
+
+ไม่มี
+
+
+---
+
+## Legacy Memories
+
+ไม่มี
+
+
+---
+
+# MEMORY STATUS
+
+Crew Age:
+
+Day 0
+
+
+Major Events:
+
+0
+
+
+Important Bonds:
+
+Ray Valence ↔ Jose Whiteman
+
+Status:
+กำลังก่อตัว
+
+
+---
+
+# END OF FILE

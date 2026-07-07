@@ -200,7 +200,7 @@ Confidential Cargo
 
 ## Basic Information
 
-Ship Name :
+Ship Name : Aster Wing
 
 Captain :
 

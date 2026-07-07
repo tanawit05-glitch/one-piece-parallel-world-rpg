@@ -1,95 +1,159 @@
-# CREW_JOURNAL.md
+# CREW JOURNAL
+
 PROJECT ASTER ENGINE  
 Module: 03_CREW  
-Version: 0.1 (Living Story Record)
+Version: 1.0 (Crew History Record)
+
 
 ---
 
-# 📖 CREW JOURNAL SYSTEM
+# CREW LOG
 
-นี่คือ “บันทึกชีวิตของ Crew”  
-เป็นระบบที่ทำให้โลกนี้ไม่ลืมอะไรเลย
 
----
+## Current Era
 
-# 🧭 PURPOSE
+Beginning
 
-- เก็บเรื่องราวที่เกิดขึ้นจริงในเกม
-- สร้าง continuity ระยะยาว
-- ใช้เป็น reference สำหรับ GM
-- ทำให้โลก “มีประวัติศาสตร์”
 
----
+## Crew Status
 
-# 📦 JOURNAL ENTRY STRUCTURE
+Newly Formed
 
-ทุก entry ต้องมี:
-
-- Date / Arc
-- Location
-- Participants
-- Event Summary
-- Emotional Tone
-- Consequence
 
 ---
 
-# 🧾 ENTRY TYPES
+# FOUNDING MEMBERS
 
-## 1. Story Entry
-เหตุการณ์หลักของเนื้อเรื่อง
 
-## 2. Emotional Entry
-เหตุการณ์ที่กระทบความรู้สึก
+## Captain
 
-## 3. Conflict Entry
-เหตุการณ์ทะเลาะ / แตกความเห็น
+เรย์ วาเลนซ์
 
-## 4. World Entry
-เหตุการณ์จากโลกภายนอก (Marine / Pirates / Factions)
 
-## 5. Legend Entry
-เหตุการณ์ระดับตำนาน
+Role:
+
+Captain
+
 
 ---
 
-# 🧠 JOURNAL BEHAVIOR RULE
+## First Member
 
-- ห้ามเขียนแบบ dry log
-- ต้องมี “ความหมายของเหตุการณ์”
-- ต้องเชื่อมกับ Memory System
-- ต้องมีผลต่ออนาคต
+โจเซ่ ไวท์แมน
 
----
 
-# 🔗 LINK TO SYSTEMS
+Role:
 
-Journal เชื่อมกับ:
+Doctor
 
-- CREW_MEMORY → แหล่งข้อมูล
-- CREW_CONFLICT → สาเหตุเหตุการณ์
-- CREW_EVOLUTION → ผลลัพธ์
 
 ---
 
-# 📌 EXAMPLE ENTRY
+# CREATION RECORD
 
-### [Log 01] The First Blood Sea
 
-- Location: East Blue Sea Route
-- Participants: Crew Core Members
-- Event: Encountered Pirate Raid on merchant ship
+## Day 0
 
-- Summary:
-Crew chose to intervene, resulting in first real combat experience.
+The Beginning
 
-- Emotional Tone:
-Fear → Determination
 
-- Consequence:
-- Bond increased between members
-- Morale stabilized under pressure
-- First Combat Memory created
+สมาชิกสองคนเริ่มต้นเส้นทางเดียวกัน
+
+
+เรย์ วาเลนซ์:
+
+ชายหนุ่มผู้ต้องการเดินทางอย่างอิสระ
+
+
+โจเซ่ ไวท์แมน:
+
+อดีตแพทย์ทหารเรือ
+ผู้กำลังค้นหาชีวิตที่เป็นของตัวเอง
+
+
+ทั้งสองยังไม่มี:
+
+- ชื่อเสียง
+- เรือ
+- ธง
+- ลูกเรือ
+
+
+แต่มีจุดร่วมเดียวกัน:
+
+ไม่ต้องการให้ใครเป็นคนกำหนดอนาคตของตัวเอง
+
+
+---
+
+# MAJOR EVENTS
+
+
+## None
+
+
+---
+
+# CREW MILESTONES
+
+
+## First Ship
+
+Locked
+
+
+## First Adventure
+
+Locked
+
+
+## First Enemy
+
+Locked
+
+
+## First New Member
+
+Locked
+
+
+---
+
+# RELATIONSHIP DEVELOPMENT
+
+
+## Ray ↔ Jose
+
+
+Initial Stage:
+
+Acquainted
+
+
+Current Status:
+
+กำลังเรียนรู้กัน
+
+
+Future Development:
+
+ขึ้นอยู่กับเหตุการณ์จริง
+
+
+---
+
+# GM RULE
+
+
+บันทึกเฉพาะสิ่งที่เกิดขึ้นจริงในโลกเกม
+
+
+ห้ามสร้างความสัมพันธ์
+หรือเหตุการณ์สำคัญล่วงหน้า
+
+
+Crew ต้องเติบโตจากการเดินทาง
+
 
 ---
 

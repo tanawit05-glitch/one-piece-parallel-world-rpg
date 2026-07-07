@@ -113,4 +113,41 @@ Crew จะเปลี่ยนเพราะ:
 
 ---
 
+---
+
+# CURRENT CREW EVOLUTION STATUS
+
+
+Crew:
+
+Unknown
+
+
+Current Stage:
+
+Stage 1: Formation
+
+
+Reason:
+
+Crew เพิ่งเริ่มก่อตัว
+สมาชิกยังอยู่ในช่วงเรียนรู้กัน
+
+
+Major Evolution Events:
+
+None
+
+
+Next Possible Evolution:
+
+ขึ้นอยู่กับ:
+
+- การเดินทางครั้งแรก
+- เหตุการณ์ร่วมกัน
+- การตัดสินใจของสมาชิก
+- ความสัมพันธ์ที่เกิดขึ้น
+
+
+---
 # END OF FILE

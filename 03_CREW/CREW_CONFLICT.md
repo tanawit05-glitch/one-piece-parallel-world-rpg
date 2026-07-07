@@ -155,5 +155,42 @@ Game Master ต้อง:
 - ทุก Conflict ต้องเปลี่ยน Crew state
 
 ---
+---
 
+# CONFLICT MEMORY LINK
+
+ทุก Conflict ระดับ 3 ขึ้นไป
+ต้องถูกบันทึกลง CREW_MEMORY
+
+
+Record:
+
+- Participants
+- Cause
+- Decision
+- Result
+- Relationship Change
+
+
+Example:
+
+Event:
+Captain ตัดสินใจเสี่ยงช่วยเกาะ
+
+
+Participants:
+Captain / Crew Members
+
+
+Result:
+บางคนไม่เห็นด้วย
+
+
+Impact:
+
+- Trust เพิ่มกับบางคน
+- Trust ลดกับบางคน
+- เกิด Shared Memory ใหม่
+
+---
 # END OF FILE

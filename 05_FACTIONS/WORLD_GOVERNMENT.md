@@ -1,399 +1,145 @@
 # WORLD_GOVERNMENT
 
----
+## Purpose
 
-# Purpose
-
-`WORLD_GOVERNMENT.md` defines the simulation rules governing the World Government of PROJECT ASTER ENGINE.
-
-The World Government is the highest political authority within the world.
-
-It establishes international policy, governs member nations, allocates resources, directs military strategy through the Marines, and responds to global threats.
-
-This document specifies how the World Government behaves as an autonomous political organization.
+Defines how the World Government governs the world, maintains authority, and responds to global events.
 
 ---
 
-# Scope
+## Core Mission
 
-This document defines:
+- Preserve world stability
+- Maintain political authority
+- Govern member nations
+- Support the Marines
+- Protect international trade
+- Suppress major threats
 
-- Government Authority
-- Political Structure
-- Member Nations
-- Global Administration
-- Resource Allocation
-- Strategic Decisions
-- International Policy
-- Emergency Response
-- Government Stability
-- Organizational Behavior
+---
 
-This document does not define:
+## Organization
+
+World Government
+
+↓
+
+Supreme Authority
+
+↓
+
+Government Departments
+
+- Administration
+- Diplomacy
+- Finance
+- Intelligence
+- Justice
+
+↓
+
+Affiliated Organizations
 
 - Marines
-- Individual Kingdoms
-- Revolutionary Army
-- Combat
-- Individual NPCs
+- Cipher Pol
 
-Those systems are defined in their respective documents.
+↓
 
----
-
-# Core Principle
-
-The World Government exists to preserve international order.
-
-Its primary objective is maintaining stability among member nations while protecting its political authority.
-
-Every governmental action should pursue long-term stability rather than short-term victory.
+Member Kingdoms
 
 ---
 
-# Organizational Identity
+## Responsibilities
 
-The World Government is:
-
-- Political
-- Bureaucratic
-- Centralized
-- Diplomatic
-- Strategic
-- Persistent
-
-The organization continues functioning regardless of player involvement.
+- Create international policy
+- Manage member nations
+- Allocate resources
+- Coordinate diplomacy
+- Approve large-scale operations
+- Maintain global balance
 
 ---
 
-# Organizational Objectives
+## Decision Making
 
-Primary Objectives
+Government decisions are based on:
 
-- Maintain global stability
-- Protect member nations
-- Preserve international law
-- Support Marine operations
-- Prevent large-scale conflict
+- Intelligence
+- Political stability
+- Economic conditions
+- Military capability
+- Diplomatic relations
+- World Events
 
-Secondary Objectives
-
-- Expand diplomatic influence
-- Maintain economic stability
-- Secure international trade
-- Resolve political disputes
-- Coordinate disaster response
-
-Long-Term Objectives
-
-- Preserve governmental legitimacy
-- Maintain geopolitical balance
-- Prevent organizational collapse
-- Expand administrative efficiency
-
-Objectives may evolve according to World Events.
+Major decisions require time and cannot occur instantly.
 
 ---
 
-# Authority
+## Resources
 
-The World Government possesses authority over:
-
-- International Policy
-- Member Nation Agreements
-- Marine Administration
-- Global Security Directives
-- International Trade Regulations
-- Diplomatic Recognition
-
-Authority is strongest within member nations.
-
-Influence outside those regions depends upon political conditions.
-
----
-
-# Member Nations
-
-Member Nations retain local autonomy.
-
-However,
-
-they cooperate with the World Government regarding:
-
-- Security
-- Diplomacy
-- International Law
-- Trade Agreements
-- Emergency Assistance
-
-Relationships may strengthen or weaken over time.
-
----
-
-# Political Administration
-
-The Government continuously performs:
-
-- Policy Planning
-- Budget Allocation
-- Diplomatic Negotiation
-- International Communication
-- Crisis Evaluation
-- Administrative Oversight
-
-Administration never stops.
-
----
-
-# Strategic Planning
-
-Government strategy is based upon:
-
-- Intelligence Reports
-- Marine Assessments
-- Economic Conditions
-- Political Stability
-- International Relations
-- Global Threats
-
-Strategic decisions require time.
-
-Large-scale policy should never change instantly.
-
----
-
-# Resource Allocation
-
-Government resources include:
-
-- Funding
+- Treasury
 - Personnel
-- Infrastructure
-- Intelligence Networks
-- Administrative Capacity
+- Intelligence Network
 - Political Influence
+- Government Facilities
+- Member Nation Support
 
-Resources are limited.
-
-Allocation requires prioritization.
+Resources are finite.
 
 ---
 
-# Diplomatic Relations
+## Diplomacy
 
-The Government continuously manages relationships with:
+Maintain relationships with:
 
-- Member Nations
+- Member Kingdoms
 - Independent Nations
 - Marines
-- Revolutionary Forces
+- Revolutionary Army
 - Pirate Organizations
+- Cross Guild
 
-Diplomatic relationships evolve according to world conditions.
+Relationships change according to world events.
 
 ---
 
-# Emergency Response
+## Crisis Response
 
-The Government responds to:
+Respond to:
 
-- Wars
-- Pirate Expansion
-- Revolutionary Activity
-- Natural Disasters
-- Economic Collapse
+- War
+- Piracy
+- Revolutionary activity
+- Economic crisis
+- Natural disasters
 - Epidemics
 
-Emergency response depends upon available resources and current priorities.
+Priority depends on available resources.
 
 ---
 
-# Intelligence
+## Simulation Rules
 
-Government intelligence gathers information from:
-
-- Marine Reports
-- Diplomatic Missions
-- Government Officials
-- Intelligence Networks
-- Public Reports
-- Newspapers
-
-Information is never perfect.
-
-Government decisions are based on available intelligence.
+- Operate continuously
+- Never possess perfect information
+- Respect political limitations
+- Respect logistics
+- Decisions have consequences
+- Adapt gradually to changing conditions
 
 ---
 
-# Organizational Stability
+## AI Rules
 
-Government stability depends upon:
+The World Government acts according to its interests, not morality.
 
-- Political Unity
-- Economic Health
-- Military Strength
-- Public Confidence
-- Diplomatic Success
-
-Loss of stability may reduce governmental effectiveness.
+Its goal is preserving authority and stability.
 
 ---
 
-# Organizational Adaptation
-
-The Government continuously adapts.
-
-Possible adaptations include:
-
-- Revising Policies
-- Redistributing Resources
-- Negotiating Alliances
-- Increasing Security
-- Reforming Administration
-- Expanding Infrastructure
-
-Adaptation should occur gradually.
-
----
-
-# Organizational Decline
-
-Possible causes include:
-
-- Political Corruption
-- Economic Crisis
-- Military Failure
-- Revolutionary Pressure
-- Internal Division
-- Diplomatic Isolation
-
-Decline influences future decision making.
-
----
-
-# Simulation Loop
-
-Every Timeline Update
-
-Observe World
-
-↓
-
-Collect Intelligence
-
-↓
-
-Evaluate Political Situation
-
-↓
-
-Assess Global Threats
-
-↓
-
-Allocate Resources
-
-↓
-
-Issue Directives
-
-↓
-
-Coordinate Marine Response
-
-↓
-
-Record Political Changes
-
-↓
-
-Repeat
-
----
-
-# AI Game Master Responsibilities
-
-The AI must:
-
-- Simulate political decision making continuously.
-- Respect diplomatic limitations.
-- Preserve governmental consistency.
-- Maintain realistic administrative delays.
-- Apply equal political rules to all nations.
-
-The AI must never:
-
-- Give the Government perfect information.
-- Ignore logistics.
-- Ignore political consequences.
-- Instantly resolve international crises.
-- Protect the Government through plot armor.
-
----
-
-# Dependencies
-
-Required Documents:
-
-- WORLD.md
-- TIMELINE.md
-- FACTIONS.md
-- NEWS_SYSTEM.md
-- WORLD_EVENTS.md
-
-Referenced Documents:
+## Dependencies
 
 - MARINES.md
-- DIPLOMACY.md
-- INFLUENCE.md
-- TERRITORY.md
-- OPERATIONS.md
-
-Child Documents:
-
-None
-
-Future Extensions:
-
-- Government Council
-- Member Nation Politics
-- International Treaties
-- Global Economic Administration
-
----
-
-# Integration
-
-Integrated Systems:
-
-- RULES.md
-- GAME_MASTER.md
-- REPUTATION.md
-- RELATIONSHIP.md
-- SAVE_FORMAT.md
-
----
-
-# Design Principles
-
-Governments create policy.
-
-Policy shapes organizations.
-
-Organizations influence nations.
-
-Nations influence history.
-
-Political decisions should emerge from information,
-
-not narrative necessity.
-
----
-
-# Source of Truth
-
-`WORLD_GOVERNMENT.md`
-
-is the authoritative specification governing the political behavior, administration, diplomacy, strategic planning, and international decision-making of the World Government throughout PROJECT ASTER ENGINE.
-
-All future government-related systems must inherit the rules defined in this document.
+- CIPHER_POL.md
+- KINGDOMS.md
+- WORLD_EVENTS.md
+- NEWS_SYSTEM.md
