@@ -1,56 +1,42 @@
-# PROJECT ASTER ENGINE
+# MOBILE PLAY MODE
 
-# WORKFLOW
+PROJECT ASTER ENGINE
 
-Version: 2.0
+fully supports
 
-Status: Canon
+Mobile Play
 
-Owner: System Architect
+including
 
----
+- iPad
+- Tablet
+- Mobile Phone
 
-# DEVELOPMENT PIPELINE
+without requiring
 
-VS Code
+continuous access
 
-↓
+to GitHub
 
-Codex
+or
 
-↓
-
-Review
-
-↓
-
-GitHub
-
-↓
-
-Production
+VS Code.
 
 ---
 
-# GAMEPLAY PIPELINE
+# MOBILE SAVE PIPELINE
 
 Player
 
 ↓
 
-Game Master
-
-↓
-
-Narrative Simulation
+Play Episode
 
 ↓
 
 Episode Complete
 
----
-
-# SAVE PIPELINE
+↓
 
 Player types
 
@@ -64,192 +50,870 @@ SESSION_UPDATE.md
 
 ↓
 
-Archivist starts Save Process
+Archivist validates
+
+Session Data
+
+↓
+
+Archivist creates
+
+SAVE SUMMARY
+
+↓
+
+SAVE COMPLETE
 
 ---
 
-# LOAD ORDER
+# SAVE SUMMARY
 
-Archivist reads
+SAVE SUMMARY
 
-1. CURRENT_STATE.md
-2. WORLD_STATE.md
-3. CURRENT_PLAYER.md
-4. CURRENT_CREW.md
-5. CURRENT_WORLD.md
-6. CURRENT_NPCS.md
-7. CURRENT_ISLANDS.md
-8. CURRENT_FACTIONS.md
-9. CURRENT_ITEMS.md
-10. CURRENT_DEVIL_FRUITS.md
-11. CURRENT_SHIPS.md
-12. SESSION_UPDATE.md
+is the official
+
+mobile session transfer format.
+
+Its purpose
+
+is to allow
+
+Campaign Continuation
+
+between ChatGPT Sessions
+
+without requiring
+
+manual database updates.
+
+SAVE SUMMARY
+
+contains
+
+all information required
+
+to continue
+
+the Campaign.
 
 ---
 
-# VALIDATION
+# SAVE SUMMARY CONTENTS
 
-Before updating
+Every SAVE SUMMARY
 
-Archivist verifies
+must include
 
+- Save Version
 - Episode Number
 - World Day
-- Timeline
+- Current Arc
+- Current Island
+- Current Location
+- Story Summary
+- Active Objectives
+- Player Status
+- Crew Status
+- Ship Status
+- Current Inventory
+- Current Money
+- Reputation
+- Bounty
+- Devil Fruit Status
+- Haki Status
+- Relationship Changes
+- NPC Changes
+- Faction Changes
+- World Changes
+- Economy Changes
+- Important Flags
+- Future Hooks
+
+No gameplay information
+
+required for the next Session
+
+may be omitted.
+
+---
+
+# MOBILE LOAD PIPELINE
+
+Player
+
+↓
+
+Open New Chat
+
+↓
+
+Upload
+
+SAVE SUMMARY
+
+↓
+
+Game Master
+
+loads
+
+SAVE SUMMARY
+
+↓
+
+Campaign resumes
+
+immediately
+
+from the latest Save.
+
+No additional files
+
+are required
+
+for normal gameplay.
+
+---
+
+# DESKTOP SYNCHRONIZATION
+
+When returning
+
+to a desktop computer
+
+the player
+
+may synchronize
+
+the Repository.
+
+Synchronization includes
+
+- CURRENT_STATE.md
+- WORLD_STATE.md
+- CURRENT_PLAYER.md
+- CURRENT_CREW.md
+- CURRENT_WORLD.md
+- CURRENT_NPCS.md
+- CURRENT_ISLANDS.md
+- CURRENT_FACTIONS.md
+- CURRENT_ITEMS.md
+- CURRENT_DEVIL_FRUITS.md
+- CURRENT_SHIPS.md
+- Databases
+- Logs
+
+GitHub
+
+remains
+
+the permanent backup
+
+and
+
+Source Repository
+
+of PROJECT ASTER ENGINE.
+
+Desktop synchronization
+
+is optional
+
+and does not affect
+
+Campaign Continuity.
+
+---
+
+# MOBILE PLAY RULES
+
+During Mobile Play
+
+SAVE SUMMARY
+
+is considered
+
+the active session state.
+
+CURRENT_STATE.md
+
+does not need
+
+to be updated
+
+after every Episode.
+
+GitHub
+
+does not need
+
+to be updated
+
+after every Episode.
+
+Players
+
+may synchronize
+
+multiple Episodes
+
+at a later time.
+
+Campaign Continuity
+
+must always follow
+
+the latest
+
+SAVE SUMMARY.
+
+---
+
+# MOBILE PHILOSOPHY
+
+The purpose
+
+of Mobile Play Mode
+
+is to remove
+
+technical barriers
+
+between
+
+the player
+
+and
+
+the adventure.
+
+The player
+
+should focus
+
+on playing
+
+the Campaign.
+
+Repository maintenance
+
+should never interrupt
+
+Narrative Simulation.
+
+SAVE SUMMARY
+
+exists
+
+to preserve
+
+Campaign Continuity
+
+while allowing
+
+PROJECT ASTER ENGINE
+
+to be played
+
+comfortably
+
+on mobile devices.
+
+---
+
+# SAVE SUMMARY LIFECYCLE
+
+SAVE SUMMARY
+
+always represents
+
+the latest Canon State
+
+of the Campaign.
+
+Each completed Episode
+
+replaces
+
+the previous
+
+SAVE SUMMARY.
+
+Only
+
+one
+
+SAVE SUMMARY
+
+is considered
+
+Active.
+
+Older
+
+SAVE SUMMARY
+
+files
+
+are considered
+
+Archive.
+
+---
+
+# SAVE SUMMARY VERSION
+
+Every SAVE SUMMARY
+
+must contain
+
+Save Version
+
+Episode Number
+
+Creation Date
+
+World Day
+
+Campaign Version
+
+Engine Version
+
+This information
+
+allows
+
+Game Master
+
+and
+
+Archivist
+
+to verify
+
+that the latest Save
+
+is being used.
+
+---
+
+# SAVE SUMMARY VALIDATION
+
+Before starting
+
+a new Session
+
+Game Master
+
+must verify
+
+- Save Version
+- Episode Number
 - Current Arc
 - Current Island
 - Player Status
 - Crew Status
-- NPC Status
 - Ship Status
-- Item Status
-- Devil Fruit Status
-- Faction Status
-- World Consistency
-
-If any conflict exists
-
-Stop Update
-
-Report Conflict
-
-Never overwrite conflicting data.
-
----
-
-# UPDATE ORDER
-
-## STEP 1
-
-Update
-
-CURRENT_STATE.md
-
----
-
-## STEP 2
-
-Update
-
-CURRENT_PLAYER.md
-
-CURRENT_CREW.md
-
-CURRENT_WORLD.md
-
-CURRENT_NPCS.md
-
-CURRENT_ISLANDS.md
-
-CURRENT_FACTIONS.md
-
-CURRENT_ITEMS.md
-
-CURRENT_DEVIL_FRUITS.md
-
-CURRENT_SHIPS.md
-
----
-
-## STEP 3
-
-If the world changed
-
-Update
-
-WORLD_STATE.md
-
-Otherwise
-
-Skip
-
----
-
-## STEP 4
-
-Update Databases
-
-NPC Database
-
-World Database
-
-Crew Database
-
-Ship Database
-
-Item Database
-
-Devil Fruit Database
-
-Faction Database
-
----
-
-## STEP 5
-
-Update Logs
-
-CAMPAIGN_LOG.md
-
-EPISODE_LOG.md
-
-PLAYER_HISTORY.md
-
-CREW_HISTORY.md
-
-NEWS_ARCHIVE.md
-
----
-
-# FINAL VALIDATION
-
-Archivist checks
-
-- Timeline continuity
-- Character continuity
-- Crew continuity
-- NPC continuity
-- Island continuity
-- World continuity
-- Economy continuity
-- Bounty continuity
-- Ship continuity
-- Devil Fruit continuity
-- Relationship continuity
-- Database integrity
-
-If validation fails
-
-Rollback update
-
-Report Error
-
----
-
-# SAVE COMPLETE
-
-Generate
-
-SAVE REPORT
-
-Including
-
-- Episode
+- Active Objectives
+- Timeline
 - World Day
-- Updated Files
-- Updated Databases
-- Warnings
-- Validation Result
+
+If any required
+
+information
+
+is missing
+
+Game Master
+
+must request
+
+a corrected
+
+SAVE SUMMARY
+
+before continuing.
+
+---
+
+# SAVE SUMMARY AUTHORITY
+
+During Mobile Play
+
+SAVE SUMMARY
+
+becomes
+
+the temporary
+
+Source of Truth.
+
+For Mobile Sessions
+
+Priority Order
+
+1.
+
+SAVE SUMMARY
 
 ↓
 
-Ready for Next Session
+2.
+
+SESSION_UPDATE.md
+
+↓
+
+3.
+
+Repository Files
+
+↓
+
+4.
+
+GitHub Backup
+
+When Desktop Synchronization
+
+is completed
+
+Repository Files
+
+become
+
+the official
+
+Source of Truth
+
+again.
+
+---
+
+# SYNCHRONIZATION POLICY
+
+Desktop Synchronization
+
+may occur
+
+at any time.
+
+Recommended
+
+- End of Story Arc
+- Every 5 Episodes
+- Every 10 Episodes
+- Before Major Engine Updates
+
+Synchronization
+
+must never
+
+modify
+
+Campaign History.
+
+It only updates
+
+the Repository
+
+to match
+
+the latest
+
+SAVE SUMMARY.
+
+---
+
+# MOBILE DESIGN GOAL
+
+The player
+
+should never
+
+need
+
+a computer
+
+to continue
+
+the Campaign.
+
+An iPad
+
+or
+
+mobile device
+
+must be sufficient
+
+to
+
+- Continue the story
+- Save progress
+- Resume the Campaign
+- Preserve continuity
+
+PROJECT ASTER ENGINE
+
+must remain
+
+fully playable
+
+without
+
+desktop access.
+
+---
+
+# FINAL PRINCIPLE
+
+Gameplay
+
+always comes first.
+
+Save Management
+
+exists
+
+to support
+
+the Campaign.
+
+It must never
+
+become
+
+an obstacle
+
+to playing.
+
+Technology
+
+serves
+
+the Narrative.
+
+Never
+
+the other way around.
+
+---
+
+# END OF MOBILE PLAY MODE
+
+---
+
+# CONFLICT RESOLUTION
+
+Whenever
+
+conflicting information
+
+is detected
+
+during
+
+Save
+
+Load
+
+or
+
+Synchronization
+
+the following
+
+priority order
+
+must be used.
+
+1.
+
+SAVE SUMMARY
+
+↓
+
+2.
+
+SESSION_UPDATE.md
+
+↓
+
+3.
+
+CURRENT_STATE.md
+
+↓
+
+4.
+
+WORLD_STATE.md
+
+↓
+
+5.
+
+Current Save Files
+
+↓
+
+6.
+
+History Logs
+
+↓
+
+7.
+
+Archive
+
+Higher Priority
+
+always overrides
+
+Lower Priority.
+
+Archivist
+
+must never
+
+overwrite
+
+higher priority
+
+information.
+
+---
+
+# FILE LOCK
+
+During
+
+Save Process
+
+all Save Files
+
+enter
+
+Locked State.
+
+Only
+
+Archivist
+
+may modify
+
+Save Files.
+
+Game Master
+
+must not
+
+continue gameplay
+
+until
+
+SAVE COMPLETE.
+
+If Save Process
+
+fails
+
+no Save File
+
+may be modified.
+
+---
+
+# SESSION STATES
+
+Every Session
+
+must exist
+
+in one
+
+of the following
+
+states.
+
+## SESSION START
+
+Latest Save
+
+loaded.
+
+Simulation
+
+ready.
+
+---
+
+## ACTIVE SESSION
+
+Narrative
+
+Combat
+
+Exploration
+
+Dialogue
+
+World Simulation
+
+are active.
+
+No Save Files
+
+may be modified.
+
+Only
+
+Temporary Memory
+
+may change.
+
+---
+
+## SAVE PROCESS
+
+Gameplay
+
+is finished.
+
+Archivist
+
+validates
+
+all confirmed
+
+information.
+
+SAVE SUMMARY
+
+is generated.
+
+---
+
+## SAVE COMPLETE
+
+Campaign
+
+is now
+
+Canon.
+
+Next Session
+
+must always
+
+begin
+
+from
+
+the latest
+
+SAVE SUMMARY.
+
+---
+
+# CHANGE POLICY
+
+Allowed
+
+- Update Save Files
+- Append Logs
+- Synchronize Repository
+- Correct Formatting
+- Update References
+- Improve Documentation
+
+Not Allowed
+
+- Delete History
+- Rewrite Episodes
+- Retcon Story
+- Change Player Decisions
+- Invent Missing Events
+- Skip Validation
+- Ignore Timeline
+- Ignore Canon
+
+Every modification
+
+must preserve
+
+Campaign Continuity.
+
+---
+
+# REPOSITORY SYNCHRONIZATION
+
+Repository
+
+is the
+
+permanent
+
+storage
+
+of PROJECT ASTER ENGINE.
+
+Synchronization
+
+updates
+
+the Repository
+
+to match
+
+the latest
+
+SAVE SUMMARY.
+
+Synchronization
+
+must never
+
+change
+
+existing
+
+Campaign History.
+
+Repository
+
+exists
+
+for
+
+- Backup
+- Version Control
+- Long-term Storage
+- Engine Development
+
+Gameplay
+
+does not depend
+
+on
+
+Repository access.
 
 ---
 
 # GIT WORKFLOW
 
+Development
+
+↓
+
 Review
+
+↓
+
+Rewrite
 
 ↓
 
@@ -263,139 +927,21 @@ Push
 
 GitHub
 
-GitHub is always the latest Source of Truth.
-
----
-
-# SYSTEM RULES
-
-Game Master never edits databases.
-
-Game Master never edits save files.
-
-Game Master never edits history files.
-
-Archivist never creates story.
-
-Archivist never changes gameplay.
-
-Archivist only updates data that already happened.
-
-Every save must update CURRENT_STATE.md.
-
-WORLD_STATE.md is updated only if the world actually changes.
-
-Logs are append-only.
-
-History is never rewritten.
-
-Databases must always preserve continuity.
-
-Rollback before overwrite.
-
-GitHub is the final Source of Truth.
-
----
-
-# SESSION LIFECYCLE
-
-## SESSION START
-
-Archivist loads
-
 ↓
 
-CURRENT_STATE.md
+Production
 
-↓
+GitHub
 
-Determine
+is the
 
-- Current Episode
-- World Day
-- Current Arc
-- Current Island
-- Active Objectives
-- Active World Events
+official
 
-↓
+Source Repository
 
-Load only required databases
+for
 
-↓
-
-Game Master starts simulation
-
----
-
-## DURING GAME
-
-Game Master
-
-may create
-
-Temporary Memory
-
-Examples
-
-- Combat Results
-
-- NPC Decisions
-
-- Reputation Changes
-
-- Economy Changes
-
-- Item Usage
-
-- Ship Damage
-
-- Relationship Changes
-
-Temporary Memory
-
-is NOT Canon.
-
-Nothing is saved
-
-until Session ends.
-
----
-
-## SESSION END
-
-Game Master creates
-
-SESSION_UPDATE.md
-
-SESSION_UPDATE.md
-
-must contain
-
-- Episode
-- World Day
-- Story Summary
-- Decisions
-- Battles
-- Exploration
-- Rewards
-- Reputation
-- Bounty
-- NPC Changes
-- Crew Changes
-- Ship Changes
-- World Changes
-- Future Hooks
-
-No database
-
-is updated
-
-before
-
-SESSION_UPDATE.md
-
-exists.
+PROJECT ASTER ENGINE.
 
 ---
 
@@ -403,197 +949,119 @@ exists.
 
 Archivist
 
-must never
+must
 
-guess information.
+record
 
-Archivist
+only
 
-must never
-
-invent missing data.
+confirmed information.
 
 Archivist
 
-must only record
+must never
 
-confirmed events.
+guess
+
+invent
+
+estimate
+
+or
+
+assume
+
+missing data.
 
 Unknown information
 
-must remain unchanged.
+remains
 
----
+unchanged
 
-# DATABASE RULES
+until confirmed
 
-Every update
+during gameplay.
 
-must satisfy
-
-Consistency
-
-↓
-
-Continuity
-
-↓
-
-Traceability
-
-↓
-
-Canonical Accuracy
-
-Every modification
+Every Save
 
 must be
 
-reproducible
+fully traceable
 
-from
-
-SESSION_UPDATE.md
-
----
-
-# CHANGE POLICY
-
-Allowed
-
-Update
-
-Append
-
-Correct formatting
-
-Link references
-
-Synchronize databases
-
-Not Allowed
-
-Delete history
-
-Rewrite old Episodes
-
-Change established facts
-
-Retcon events
-
-Modify player choices
-
-Invent outcomes
-
-Skip validation
-
----
-
-# CONFLICT RESOLUTION
-
-If two files conflict
-
-Priority Order
-
-1.
-
-CURRENT_STATE.md
-
-↓
-
-2.
+to
 
 SESSION_UPDATE.md
 
-↓
+and
 
-3.
-
-WORLD_STATE.md
-
-↓
-
-4.
-
-Current Databases
-
-↓
-
-5.
-
-History Logs
-
-↓
-
-6.
-
-Archive
-
-Never overwrite
-
-higher priority data.
+SAVE SUMMARY.
 
 ---
 
-# FILE LOCK
+# FINAL PRINCIPLES
 
-During Save
+Gameplay
 
-all Save Files
+always
 
-are considered
+comes first.
 
-Locked.
+Narrative
 
-Only Archivist
+always
 
-may modify
+comes before
 
-them.
+maintenance.
 
-Game Master
+Technology
 
-must wait
+exists
 
-until
+to support
 
-SAVE COMPLETE.
+the player.
 
----
+Repository
 
-# VERSION CONTROL
+exists
 
-Every save
+to support
 
-increments
+the Campaign.
 
-Save Version
+Save System
 
-Example
+exists
 
-Save v1
+to preserve
 
-↓
+Canon.
 
-Save v2
+Every Episode
 
-↓
+must end
 
-Save v3
+with
 
-Version Number
+one
 
-must be stored
+valid
 
-inside
+SAVE SUMMARY.
 
-CURRENT_STATE.md
+That SAVE SUMMARY
 
-Rollback
+becomes
 
-always restores
+the starting point
 
-the previous version.
+of
+
+the next
+
+Episode.
 
 ---
 
