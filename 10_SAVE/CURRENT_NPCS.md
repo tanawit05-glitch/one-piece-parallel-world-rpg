@@ -77,6 +77,8 @@ NPC ทั่วไป
 
 Alive
 
+Active
+
 Missing
 
 Captured
@@ -94,6 +96,8 @@ Hidden
 Unknown
 
 Dead
+
+Mentor
 
 ---
 

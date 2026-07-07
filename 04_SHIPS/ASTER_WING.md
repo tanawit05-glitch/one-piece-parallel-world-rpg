@@ -15,10 +15,10 @@ Class:
 Medium Sailing Ship
 
 Affiliation:
-Blue Aurora Pirates
+Future Crew
 
 Status:
-Active
+Not Yet Acquired
 
 Condition:
 Excellent
@@ -31,7 +31,7 @@ Crew Capacity:
 10
 
 Current Crew:
-3
+0
 
 Cargo Capacity:
 Medium
@@ -150,22 +150,9 @@ Improved Cannon Battery
 
 Originally constructed by skilled civilian shipwrights for long-range exploration and trade.
 
-The vessel later passed through several owners before eventually finding its way to the Blue Aurora Pirates.
+The vessel later passed through several owners before eventually awaiting its future crew.
 
 With a balanced design, reliable handling, and room for a growing crew, Aster Wing became the ship chosen to begin their journey across the seas.
 
 ---
 
-## CURRENT CREW
-
-Captain
-
-Ray Valence
-
-Navigator
-
-Waru Kazen
-
-Doctor
-
-Jose Whiteman

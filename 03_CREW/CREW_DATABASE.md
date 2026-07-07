@@ -27,12 +27,12 @@ Formation Stage
 
 Current Members:
 
-2
+0 (Formation Pending)
 
 
 Ship:
 
-None
+Not Yet Acquired
 
 
 Flag:
@@ -67,7 +67,7 @@ None
 
 ---
 
-# CURRENT MEMBERS
+# PLANNED MEMBERS
 
 
 ## Captain
@@ -125,6 +125,31 @@ Description:
 
 
 ---
+ 
+## Member 003
+ 
+Name:
+ 
+Waru Kazen
+ 
+Role:
+ 
+Navigator
+ 
+Status:
+ 
+Active
+ 
+Description:
+ 
+ผู้ชำนาญการนำทางที่นิ่งสงบ
+ 
+คอยประเมินสภาพอากาศและเส้นทาง
+ 
+เพื่อให้ลูกเรือเดินทางอย่างปลอดภัย
+ 
+ 
+---
 
 # CREW RELATIONSHIP STATUS
 
@@ -161,7 +186,7 @@ Trust:
 
 ## Ship
 
-None
+Aster Wing
 
 
 ## Money
@@ -196,8 +221,7 @@ None
 
 สมาชิกสองคน:
 
-- เรย์ วาเลนซ์
-- โจเซ่ ไวท์แมน
+Crew has not yet been formed.
 
 
 ยังไม่มีชื่อเสียง

@@ -61,6 +61,19 @@ Version: 0.1 (Operational Ship Metrics)
 
 ---
 
+## 8. Supply Stability
+
+ระดับความมั่นคงของเสบียง
+
+- อาหาร
+- น้ำ
+- ยา
+- วัสดุซ่อม
+
+มีผลต่อการเดินทางระยะยาว
+
+---
+
 # 🔄 STAT DYNAMICS RULE
 
 Stats ไม่คงที่

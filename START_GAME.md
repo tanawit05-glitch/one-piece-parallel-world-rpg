@@ -25,13 +25,14 @@ Before starting a new Session, read files in this order.
 
 - CURRENT_WORLD.md
 - CURRENT_PLAYER.md
-- CURRENT_CREW.md
-- CURRENT_SHIPS.md
 - CURRENT_FACTIONS.md
 - CURRENT_NPCS.md
 - CURRENT_ISLANDS.md
 - CURRENT_ITEMS.md
+- CURRENT_STATE.md
 - CURRENT_DEVIL_FRUITS.md
+
+Read additional CURRENT_*.md save files if they exist and are relevant to the current campaign (for example companions, ships, organizations, kingdoms, locations, or other dynamic world data). Do not assume any specific save file always exists.
 
 ## 11_SECRETS
 

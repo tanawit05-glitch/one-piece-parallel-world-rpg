@@ -169,6 +169,8 @@ Merchant
 
 Unknown
 
+Individual
+
 ---
 
 # CONDITION

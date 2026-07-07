@@ -2,7 +2,7 @@
 
 ## Role
 
-Captain
+Future Captain Candidate
 
 
 ---
@@ -379,12 +379,18 @@ East Blue
 
 Affiliation:
 
-None
+Current Status:
+
+Traveling
 
 
 Crew:
 
-Not Established
+None
+
+Status:
+
+Candidate
 
 
 ---

@@ -22,95 +22,30 @@ Dependencies :
 
 CURRENT DEVIL FRUITS
 
-คือสถานะล่าสุด
+คือสถานะล่าสุดของผลปีศาจที่มีผลต่อโลก
 
-ของผลปีศาจที่มีผลต่อโลก
+AI ใช้เอกสารนี้เพื่อติดตาม
 
-AI ใช้เอกสารนี้
-
-เพื่อติดตาม
-
-ผู้ครอบครอง
-
-ตำแหน่ง
-
-และสถานะล่าสุด
-
-ของผลปีศาจสำคัญ
+- ผู้ครอบครอง
+- ตำแหน่ง
+- สถานะล่าสุด
+- ความคืบหน้าของผู้ใช้ผลปีศาจ
 
 ---
 
 # DESIGN PRINCIPLE
 
-บันทึกเฉพาะ
+บันทึกเฉพาะผลปีศาจที่
 
-ผลปีศาจที่
-
-- ถูกผู้เล่นครอบครอง
-
-- ถูก NPC สำคัญครอบครอง
-
+- ผู้เล่นครอบครอง
+- NPC สำคัญครอบครอง
 - อยู่ระหว่างการแย่งชิง
-
 - สูญหาย
-
 - มีผลต่อเนื้อเรื่อง
 
-ไม่จำเป็นต้องบันทึก
-
-ผลปีศาจทุกผลในโลก
-
-เพราะฐานข้อมูลหลัก
-
-อยู่ใน
+ฐานข้อมูลหลักอยู่ใน
 
 08_DEVIL_FRUITS
-
----
-
-# WHEN TO UPDATE
-
-อัปเดต
-
-หลังจบทุก Episode
-
-เมื่อ
-
-ผลปีศาจ
-
-มีการเปลี่ยนแปลง
-
----
-
-# WHAT TO TRACK
-
-Fruit Name
-
-Japanese Name
-
-English Name
-
-Type
-
-Sub-Type
-
-Current User
-
-Current Owner
-
-Current Location
-
-Current Status
-
-Awakened
-
-Mastery
-
-Threat Level
-
-Importance
-
-Notes
 
 ---
 
@@ -140,11 +75,7 @@ Hidden
 
 Unknown
 
-Destroyed
-
 Transferred
-
-Sealed
 
 Available
 
@@ -180,150 +111,228 @@ Historical
 
 World Level
 
----
-
-# TEMPLATE
-
 ==================================================
 
-# DEVIL FRUIT
+# DEVIL FRUIT ENTRY : TORI TORI NO MI, MODEL: PHOENIX
 
 ## Basic Information
 
-Fruit Name :
+Fruit Name : Tori Tori no Mi
 
-Japanese Name :
+Japanese Name : 鳥鳥の実 モデル フェニックス
 
-English Name :
+English Name : Tori Tori no Mi, Model: Phoenix
 
-Type :
+Type : Zoan
 
-Sub-Type :
+Sub-Type : Mythical Zoan
 
 ---
 
 ## Current User
 
--
+Current Holder : Jose Whiteman
 
 ---
 
 ## Current Owner
 
--
+Crew :
+Not Yet Established
 
 ---
 
 ## Current Location
 
--
+East Blue
 
 ---
 
 ## Current Status
 
--
+Owned
 
 ---
 
 ## Awakening
 
--
+No
 
 ---
 
 ## Mastery
 
--
+Beginner
 
 ---
 
 ## Threat Level
 
--
+Legendary
 
 ---
 
 ## Story Importance
 
--
+Major
 
 ---
 
 ## Notes
 
--
+- Identity kept secret.
+- No public witness has confirmed this fruit.
 
 ==================================================
 
----
+# DEVIL FRUIT ENTRY : ATSU ATSU NO MI
 
-# IMPORTANT RULES
+## Basic Information
 
-หากผลปีศาจ
+Fruit Name : Atsu Atsu no Mi
 
-เปลี่ยนผู้ใช้
+Japanese Name : アツアツの実
 
-เปลี่ยนเจ้าของ
+English Name : Atsu Atsu no Mi
 
-สูญหาย
+Type : Paramecia
 
-ถูกค้นพบ
-
-หรือ
-
-ผู้ใช้เสียชีวิต
-
-ต้องอัปเดต
-
-CURRENT DEVIL FRUITS
-
-ทันทีหลังจบ Episode
+Sub-Type : -
 
 ---
 
-# AI RESPONSIBILITIES
+## Current User
 
-AI ต้อง
-
-ติดตาม
-
-ผลปีศาจสำคัญ
-
-ทุกผล
-
-อย่างต่อเนื่อง
-
-หากผู้ใช้
-
-เสียชีวิต
-
-ให้เปลี่ยนสถานะ
-
-ของผลปีศาจ
-
-ตามกฎของโลก One Piece
-
-และอัปเดต
-
-CURRENT WORLD
-
-หากเหตุการณ์นั้น
-
-ส่งผลต่อโลก
+Current Holder : Ray Valence
 
 ---
+
+## Current Owner
+
+Crew :
+Not Yet Established
+
+---
+
+## Current Location
+
+East Blue
+
+---
+
+## Current Status
+
+Owned
+
+---
+
+## Awakening
+
+No
+
+---
+
+## Mastery
+
+Beginner
+
+---
+
+## Threat Level
+
+Moderate
+
+---
+
+## Story Importance
+
+Important
+
+---
+
+## Notes
+
+- Uses body heat to enhance close combat.
+- Future captain.
+
+==================================================
+
+# DEVIL FRUIT ENTRY : INU INU NO MI, MODEL: OKUCHI NO MAKAMI
+
+## Basic Information
+
+Fruit Name : Inu Inu no Mi
+
+Japanese Name : 犬犬の実（オクチノマカミ）
+
+English Name : Inu Inu no Mi, Model: Okuchi no Makami
+
+Type : Zoan
+
+Sub-Type : Mythical Zoan
+
+---
+
+## Current User
+
+Current Holder : Waru Kazen
+
+---
+
+## Current Owner
+
+Crew :
+Not Yet Established
+
+---
+
+## Current Location
+
+East Blue
+
+---
+
+## Current Status
+
+Owned
+
+---
+
+## Awakening
+
+No
+
+---
+
+## Mastery
+
+Beginner
+
+---
+
+## Threat Level
+
+Moderate
+
+---
+
+## Story Importance
+
+Important
+
+---
+
+## Notes
+
+- Acquired before joining the future crew.
+- Primarily relies on navigation skills.
+
+==================================================
 
 # GOLDEN RULE
 
-ผลปีศาจ
+ผลปีศาจไม่เคยหายไปจากโลก
 
-ไม่เคยหายไปจากโลก
+มีเพียงการเปลี่ยนผู้ครอบครอง
 
-มีเพียง
-
-การเปลี่ยนผู้ครอบครอง
-
-และการเริ่มต้น
-
-ของเรื่องราวใหม่
+และการเริ่มต้นของเรื่องราวใหม่

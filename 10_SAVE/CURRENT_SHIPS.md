@@ -4,7 +4,7 @@
 
 Document : CURRENT_SHIPS
 
-Version : 1.0
+Version : 1.1
 
 Status : Active
 
@@ -13,304 +13,334 @@ Priority : High
 Dependencies :
 - SAVE_RULES.md
 - SHIPS/
+- CURRENT_WORLD.md
 
 ---
 
 # PURPOSE
 
-CURRENT SHIPS
+CURRENT_SHIPS
 
-คือสถานะล่าสุดของเรือทั้งหมด
+คือเอกสารแสดงสถานะล่าสุดของเรือที่เกี่ยวข้องกับ Campaign ปัจจุบัน
 
-AI ใช้เอกสารนี้
+AI ใช้เอกสารนี้เพื่อตรวจสอบ
 
-เพื่อตรวจสอบ
+- สถานะเรือ
+- สภาพเรือ
+- ตำแหน่งปัจจุบัน
+- การเดินทาง
+- เสบียง
+- ความพร้อมของเรือ
 
-สภาพเรือ
+ก่อนเริ่ม Episode ใหม่
 
-ตำแหน่ง
+---
 
-เสบียง
+# IMPORTANT RULE
 
-และความพร้อม
+CURRENT_SHIPS
 
-ก่อนเริ่มทุก Episode
+ไม่ใช่ประวัติเรือ
+
+ไม่บันทึก
+
+- เรือเก่า
+- เรือที่เคยใช้
+- เรือของ NPC ที่ไม่ได้เกี่ยวข้องในปัจจุบัน
+- ข้อมูลจาก Campaign ก่อนหน้า
+
+ต้องแสดงเฉพาะสถานะปัจจุบันเท่านั้น
 
 ---
 
 # WHEN TO UPDATE
 
-อัปเดต
+อัปเดตเมื่อ
 
-หลังจบทุก Episode
-
-หรือ
-
-เมื่อเรือมีการเปลี่ยนแปลง
+- เปลี่ยนเรือ
+- ได้รับเรือใหม่
+- เรือเสียหาย
+- ซ่อมแซมเรือ
+- เปลี่ยนเส้นทางเดินเรือ
+- เรือสูญหายหรือถูกทำลาย
 
 ---
 
-# SHIP INFORMATION
+# CURRENT SHIP STATUS
 
-Ship Name
+## Ship Information
 
-Captain
+Ship Name:
 
-Navigator
+Blue Gull
 
-Current Crew
+Ship Type:
 
-Current Sea
+Cargo Ship
 
-Current Location
+Ownership:
+
+Not Owned
+
+Current User Status:
+
+Passenger
+
+Captain:
+
+None
+
+Navigator:
+
+None
+
+Current Crew:
+
+None
+
+Passenger:
+
+Jose Whiteman
+
+---
+
+# LOCATION
+
+Current Sea:
+
+East Blue
+
+Current Location:
+
+Traveling toward Loguetown
+
+Destination:
+
+Loguetown
+
+Route:
+
+East Blue Route
 
 ---
 
 # SHIP CONDITION
 
-Overall Condition
+Overall Condition:
 
-Hull
+Unknown
 
-Mast
+Hull:
 
-Sails
+Unknown
 
-Rudder
+Mast:
 
-Anchor
+Unknown
 
-Deck
+Sails:
 
-Cabins
+Unknown
 
-Storage
+Rudder:
 
-Medical Room
+Unknown
 
-Kitchen
+Anchor:
 
-Engine (ถ้ามี)
+Unknown
+
+Deck:
+
+Unknown
+
+Cabins:
+
+Unknown
+
+Storage:
+
+Unknown
+
+Medical Room:
+
+None
+
+Kitchen:
+
+Unknown
+
+Engine:
+
+None
 
 ---
 
 # SUPPLIES
 
-Food
+Food:
 
-Fresh Water
+Available
 
-Medicine
+Fresh Water:
 
-Wood
+Available
 
-Repair Materials
+Medicine:
 
-Coal / Fuel
+Personal Medical Supplies Only
 
-Cannonballs
+Wood:
 
-Gunpowder
+Unknown
 
-Emergency Supplies
+Repair Materials:
+
+Unknown
+
+Coal / Fuel:
+
+Not Applicable
+
+Cannonballs:
+
+Unknown
+
+Gunpowder:
+
+Unknown
+
+Emergency Supplies:
+
+Unknown
 
 ---
 
 # WEAPONS
 
-Cannons
+Cannons:
 
-Ballista
+Unknown
 
-Special Weapons
+Ballista:
 
-Harpoons
+None Known
 
-Other Defenses
+Special Weapons:
+
+None Known
+
+Harpoons:
+
+None Known
+
+Other Defenses:
+
+None Known
 
 ---
 
 # NAVIGATION
 
-Current Destination
+Current Destination:
 
-Current Route
+Loguetown
 
-Log Pose
+Current Route:
 
-Eternal Pose
+East Blue
 
-Weather
+Log Pose:
 
-Sea Condition
+Not Available
 
-Visibility
+Eternal Pose:
+
+Not Available
+
+Weather:
+
+Clear
+
+Sea Condition:
+
+Normal
+
+Visibility:
+
+Good
 
 ---
 
 # UPGRADES
 
-Installed Upgrades
+Installed Upgrades:
 
-Ship Modifications
+None
 
-Special Equipment
+Ship Modifications:
+
+None
+
+Special Equipment:
+
+None
 
 ---
 
 # SHIP STATUS
 
-Anchored
+Current Status:
 
 Sailing
 
-Docked
+Condition:
 
-Repairing
+Operational
 
-Under Attack
+Repair Needed:
 
-Lost
-
-Destroyed
+None Known
 
 ---
 
 # IMPORTANT CARGO
 
-Treasure
+Treasure:
 
-Rare Items
+None Known
 
-Devil Fruits
+Rare Items:
 
-Medical Supplies
+None
 
-Trade Goods
+Devil Fruits:
 
-Confidential Cargo
+None
 
----
+Medical Supplies:
 
-# TEMPLATE
+Jose Whiteman Personal Medical Equipment
 
-==================================================
+Trade Goods:
 
-# CURRENT SHIP
+Unknown
 
-## Basic Information
+Confidential Cargo:
 
-Ship Name : Aster Wing
-
-Captain :
-
-Navigator :
-
-Current Crew :
-
-Current Sea :
-
-Current Location :
+None Known
 
 ---
 
-## Condition
+# NOTES
 
-Overall :
+Blue Gull is not owned by Jose Whiteman.
 
-Hull :
+It is the current transportation being used during his journey toward Loguetown.
 
-Mast :
+Jose Whiteman has no crew and no personal ship at this time.
 
-Sails :
-
-Rudder :
-
-Deck :
-
-Cabins :
-
-Storage :
-
-Medical Room :
-
-Kitchen :
-
----
-
-## Supplies
-
-Food :
-
-Water :
-
-Medicine :
-
-Repair Materials :
-
-Fuel :
-
-Cannonballs :
-
-Gunpowder :
-
-Emergency Supplies :
-
----
-
-## Weapons
-
-Cannons :
-
-Ballista :
-
-Special Weapons :
-
-Harpoons :
-
----
-
-## Navigation
-
-Destination :
-
-Current Route :
-
-Log Pose :
-
-Eternal Pose :
-
-Weather :
-
-Sea Condition :
-
-Visibility :
-
----
-
-## Upgrades
-
--
-
----
-
-## Ship Status
-
--
-
----
-
-## Important Cargo
-
--
-
----
-
-## Notes
-
--
-
-==================================================
+Previous ships or crews from older Campaign data must not be loaded.
 
 ---
 
@@ -320,12 +350,18 @@ CURRENT SHIPS
 
 ต้องสะท้อน
 
-สภาพจริง
-
-ของเรือ
+สถานะจริงของเรือ
 
 ณ เวลาปัจจุบัน
 
 ไม่ใช่
 
-ประวัติการเดินเรือ
+ประวัติเรือ
+
+ไม่ใช่
+
+ข้อมูลจาก Template
+
+ไม่ใช่
+
+ข้อมูล Campaign เก่า

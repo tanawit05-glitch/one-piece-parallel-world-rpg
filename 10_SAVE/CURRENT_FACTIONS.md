@@ -105,7 +105,11 @@ AI ใช้เอกสารนี้
 
 ใช้สถานะต่อไปนี้
 
+Active
+
 Normal
+
+Respected
 
 Preparing
 
@@ -189,6 +193,7 @@ Crime Syndicates
 
 Other Original Organizations
 
+Independent Doctors
 ---
 
 # ACTIVE OPERATIONS

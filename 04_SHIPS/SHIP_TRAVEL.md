@@ -65,6 +65,16 @@ Version: 0.1 (Sea Navigation & World Movement)
 - Lost route
 - Island discovery
 - Sea monster encounter
+- Merchant convoy
+- Marine inspection
+
+# TRAVEL RULE
+
+การเดินทางไม่รับประกันว่าจะเกิดเหตุการณ์เสมอ
+
+บางครั้งหลายวันอาจผ่านไปอย่างสงบ
+
+บางครั้งเหตุการณ์หลายอย่างอาจเกิดขึ้นภายในวันเดียว
 
 ---
 

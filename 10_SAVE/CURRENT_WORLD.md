@@ -192,6 +192,9 @@ Snow
 
 - เทศกาลใหญ่
 
+- Bounty Hunter Activities
+- Pirate Movements
+
 ---
 
 # ACTIVE FACTIONS
@@ -248,6 +251,8 @@ Cross Guild เริ่มมีอิทธิพล
 
 # ACTIVE THREATS
 
+
+
 ภัยคุกคาม
 
 ที่กำลังเกิดขึ้น
@@ -265,6 +270,8 @@ Sea Kings
 โจร
 
 กองเรือมารีน
+
+- Criminal Organizations
 
 ---
 

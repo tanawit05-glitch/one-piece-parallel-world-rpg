@@ -4,7 +4,7 @@
 
 Document : CURRENT_CREW
 
-Version : 1.0
+Version : 1.1
 
 Status : Active
 
@@ -19,33 +19,56 @@ Dependencies :
 
 # PURPOSE
 
-CURRENT CREW
+CURRENT_CREW
 
-คือสถานะล่าสุดของลูกเรือทั้งหมด
+คือเอกสารแสดงสถานะล่าสุดของกลุ่มลูกเรือ
 
-AI ใช้เอกสารนี้
+ใช้สำหรับตรวจสอบ
 
-เพื่อตรวจสอบ
+- สถานะสมาชิก
+- จำนวนสมาชิก
+- ความพร้อมของลูกเรือ
+- ความสัมพันธ์ภายใน
+- ภารกิจของกลุ่ม
 
-ความพร้อม
+ก่อนเริ่ม Episode ใหม่
 
-ความสัมพันธ์
+CURRENT_CREW
 
-และสถานะของลูกเรือ
+ไม่ใช่เอกสารประวัติ
 
-ก่อนเริ่มทุก Episode
+ไม่บันทึกเหตุการณ์ในอดีต
+
+ไม่บันทึกสมาชิกที่เคยอยู่
+
+ไม่บันทึกกลุ่มที่ถูกยกเลิก
 
 ---
 
 # WHEN TO UPDATE
 
-อัปเดต
+อัปเดตเมื่อ
 
-หลังจบทุก Episode
+- มีสมาชิกใหม่เข้าร่วม
+- สมาชิกออกจากกลุ่ม
+- สมาชิกเสียชีวิต
+- มีการเปลี่ยนตำแหน่ง
+- มีการก่อตั้ง Crew
+- มีการเปลี่ยนเรือหลัก
 
-หรือ
+---
 
-เมื่อสมาชิกมีการเปลี่ยนแปลง
+# CURRENT STATUS RULE
+
+หากผู้เล่นยังไม่มีลูกเรือ
+
+ให้แสดง:
+
+No Crew
+
+ไม่สร้างข้อมูลสมมติ
+
+ไม่เพิ่มสมาชิกเพื่อเติมจำนวน
 
 ---
 
@@ -64,6 +87,38 @@ Current Sea
 Current Location
 
 Current Objective
+
+---
+
+# CURRENT CREW INFORMATION
+
+Crew Name:
+
+None
+
+Flag:
+
+None
+
+Captain:
+
+None
+
+Ship:
+
+None
+
+Current Sea:
+
+East Blue
+
+Current Location:
+
+Traveling on Blue Gull
+
+Current Objective:
+
+Continue journey as Doctor
 
 ---
 
@@ -91,193 +146,225 @@ Crew Funds
 
 ---
 
+# CURRENT CREW STATUS
+
+Total Members:
+
+1
+
+Available Members:
+
+1
+
+Injured Members:
+
+0
+
+Missing Members:
+
+0
+
+Dead Members:
+
+0
+
+Morale:
+
+Not Applicable
+
+Food Supply:
+
+Personal Travel Supplies
+
+Water Supply:
+
+Available
+
+Medical Supply:
+
+Personal Medical Equipment
+
+Crew Funds:
+
+192,800 Beli
+
+---
+
 # MEMBER STATUS
 
-สำหรับสมาชิกแต่ละคน
+## Current Members
 
-บันทึก
+- Jose Whiteman
 
-Name
+Position:
+Doctor
 
-Position
+Status:
+Active
 
-Current Status
+Health:
+Good
 
-Health
+Mental State:
+Stable
 
-Mental State
+Current Duty:
+Medical / Personal Journey
 
-Current Duty
+Current Location:
+Blue Gull
 
-Current Location
+
+---
+
+# FORMER MEMBERS
+
+None
+
 
 ---
 
 # SHIP STATUS
 
-Current Ship
+Current Ship:
 
-Condition
+Blue Gull
 
-Sailing Status
 
-Anchor Status
+Condition:
 
-Fuel (ถ้ามี)
+Unknown
 
-Repair Needed
+Sailing Status:
+
+Passenger
+
+
+Anchor Status:
+
+Not Applicable
+
+
+Repair Needed:
+
+None Known
+
 
 ---
 
 # CREW RELATIONSHIPS
 
-Crew Unity
+Crew Unity:
 
-Captain Trust
+Not Applicable
 
-Internal Conflict
 
-Important Relationships
+Captain Trust:
+
+Not Applicable
+
+
+Internal Conflict:
+
+None
+
+
+Important Relationships:
+
+None
+
 
 ---
 
 # ACTIVE MISSIONS
 
-Main Mission
+Main Mission:
 
-Side Mission
+Continue journey toward Loguetown
 
-Personal Mission
+
+Side Mission:
+
+Continue working as a Doctor
+
+
+Personal Mission:
+
+Build a new life through personal choices
+
 
 ---
 
 # CURRENT THREATS
 
-Current Enemies
+Current Enemies:
 
-Marine Pursuit
+None Known
 
-Natural Disaster
 
-Disease
+Marine Pursuit:
 
-Internal Conflict
+None Known
+
+
+Natural Disaster:
+
+None
+
+
+Disease:
+
+None
+
+
+Internal Conflict:
+
+None
+
 
 ---
 
 # IMPORTANT ITEMS
 
-Shared Inventory
+Shared Inventory:
 
-Food
+None
 
-Medicine
 
-Treasure
+Personal Items:
 
-Special Items
+- Medical Bag
+- Medical Equipment
+- Medicines
+- Travel Supplies
+- Food Supplies
+- Drinking Water
 
-Maps
 
-Log Pose
+Special Items:
 
-Eternal Pose
+- Bounty Hunter Registration Token
+
 
 ---
 
-# TEMPLATE
+# NOTES
+
+Jose Whiteman currently has no crew affiliation.
+
+He is traveling independently as a Doctor.
+
+No Captain exists.
+
+No Crew has been officially formed.
+
+No ship is owned by the player.
+
+Blue Gull is only current transportation.
+
 
 ==================================================
 
-# CURRENT CREW
-
-## Crew Information
-
-Crew Name :
-
-Captain :
-
-Ship :
-
-Current Sea :
-
-Current Location :
-
-Objective :
-
----
-
-## Crew Status
-
-Members :
-
-Morale :
-
-Food :
-
-Water :
-
-Medicine :
-
-Funds :
-
----
-
-## Member Status
-
--
-
----
-
-## Ship Status
-
-Ship :
-
-Condition :
-
-Repair :
-
----
-
-## Relationships
-
-Crew Unity :
-
-Captain Trust :
-
-Conflicts :
-
----
-
-## Active Missions
-
-Main :
-
-Side :
-
-Personal :
-
----
-
-## Current Threats
-
--
-
----
-
-## Important Items
-
--
-
----
-
-## Notes
-
--
-
-==================================================
-
----
 
 # GOLDEN RULE
 

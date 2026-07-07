@@ -18,10 +18,13 @@ Occupation:
 Navigator
 
 Crew:
-Blue Aurora Pirates
+None
+
+Status:
+Candidate
 
 Affiliation:
-Blue Aurora Pirates
+None
 
 Bounty:
 0 Beli
@@ -70,11 +73,9 @@ Always thinks before acting.
 
 He dislikes unnecessary arguments.
 
-When the captain and Jose begin arguing, Waru quietly ends the discussion with only a few words.
+When Ray and Jose disagree, Waru calmly offers a solution instead of taking sides.
 
-The crew trusts his judgment more than his explanations.
-
----
+People naturally trust his judgment.
 
 ## ROLE
 
@@ -171,8 +172,6 @@ To chart every sea route in the world.
 
 To create the safest navigation map ever made.
 
----
-
 ## BACKGROUND
 
 Waru was born on a small island where sailors respected the sea more than they feared it.
@@ -181,19 +180,17 @@ He studied navigation from childhood and believed every disaster at sea could be
 
 During an expedition, he accidentally ate the Inu Inu no Mi, Model: Okuchi no Makami.
 
-The immense power frightened him.
+Unable to fully control its power, he continued relying on knowledge and experience instead of the fruit.
 
-Unable to control his transformations or the ice he produced, he chose to rely on his own skill rather than the fruit.
+Eventually he met Ray Valence.
 
-He eventually met Ray Valence.
+Ray never asked how powerful Waru was.
 
-Unlike others, Ray never asked how powerful his Devil Fruit was.
-
-Instead, he simply asked,
+He only asked,
 
 "Can you get us home?"
 
-Waru accepted the invitation and became the navigator of the Blue Aurora Pirates.
+Waru accepted Ray's invitation to travel together.
 
 ---
 
@@ -209,13 +206,11 @@ Jose Whiteman
 
 Trusts Jose completely.
 
-Often reminds him that saving everyone is impossible if the crew is lost.
+Believes Jose's kindness is one of the crew's greatest strengths.
 
-Crew
+Future Crew
 
-Acts as the emotional anchor of the ship.
-
-Even in complete silence, his presence reassures everyone.
+Believes a good crew survives through trust rather than strength alone.
 
 ---
 

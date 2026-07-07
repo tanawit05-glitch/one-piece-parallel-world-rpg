@@ -325,11 +325,11 @@ Mythical
 
 หลังจบทุก Session
 
-จะอัปเดต SAVE
+Game Master จะสร้าง SESSION_UPDATE.md
 
-SAVE ล่าสุด
+Archivist จะนำข้อมูลไปอัปเดตระบบ SAVE และฐานข้อมูลของ Campaign
 
-ถือเป็น Canon สูงสุด
+SAVE ล่าสุดถือเป็น Canon สูงสุดของ Campaign
 
 ---
 

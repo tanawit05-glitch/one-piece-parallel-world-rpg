@@ -140,6 +140,10 @@ Game Master ต้อง:
 - ถูกฝึกโดย CP เป็นเวลา 12 ปี
 - เหตุการณ์กับพ่อเป็นบาดแผลสำคัญ
 
+### Waru Kazen
+
+
+ไม่มี
 
 ---
 
@@ -161,7 +165,7 @@ Game Master ต้อง:
 
 Crew Age:
 
-Day 0
+Not Yet Formed
 
 
 Major Events:
@@ -171,11 +175,12 @@ Major Events:
 
 Important Bonds:
 
-Ray Valence ↔ Jose Whiteman
+- Ray Valence ↔ Jose Whiteman
+- Ray Valence ↔ Waru Kazen
+- Jose Whiteman ↔ Waru Kazen
 
 Status:
-กำลังก่อตัว
-
+Not Yet Established
 
 ---
 
