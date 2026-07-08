@@ -1,301 +1,348 @@
 # ONE PIECE PARALLEL WORLD RPG
-## ENGINE ROADMAP
+# ASTER ENGINE
+# ENGINE ROADMAP
 
-Version : 1.0
-Status : Active
+Document Version : 2.0
 
----
+Status : Production
 
-# PURPOSE
+Document Type : Development Roadmap
 
-เอกสารนี้ใช้กำหนดแผนการพัฒนา Engine
+Authority :
 
-ไม่ใช่กฎของเกม
-
-ไม่ใช่ Save
-
-ไม่ใช่ข้อมูลของผู้เล่น
-
-ใช้เพื่อติดตามความคืบหน้าของ PROJECT ASTER ENGINE
+SYSTEM.md
 
 ---
 
-# DEVELOPMENT GOAL
+# 1. PURPOSE
 
-สร้างระบบ Tabletop RPG ที่สามารถเล่นได้อย่างต่อเนื่องมากกว่า 50 Episodes
+ENGINE_ROADMAP.md
 
-Engine ต้องสามารถ
+กำหนดทิศทางการพัฒนา
 
-- จำโลกได้
-- จำผู้เล่นได้
-- จำ NPC ได้
-- จำผลของการกระทำได้
-- ให้โลกดำเนินต่อโดยไม่ต้องพึ่งผู้เล่น
+PROJECT ASTER ENGINE
 
 ---
 
-# CURRENT VERSION
+หน้าที่:
 
-Engine Version
-
-1.0.0
-
-Project Status
-
-Core Development
+- กำหนดลำดับการพัฒนา
+- ติดตามความคืบหน้า
+- วางแผน Feature ในอนาคต
 
 ---
 
-# PHASE 1
+ENGINE_ROADMAP.md
 
-CORE ENGINE
+ไม่กำหนด:
 
-Status
+- กฎของ Engine
+- Gameplay Rules
+- Canon
+- รายละเอียดระบบ
 
-Completed
+ให้อ้างอิง:
 
-Modules
+SYSTEM.md
 
-[x] SYSTEM
+DESIGN.md
 
-[x] RULES
-
-[x] DESIGN
-
-[x] GAME MASTER
-
-[x] COMBAT
-
-[x] DICE
-
-[x] HAKI
-
-[x] MEDICAL
-
-[x] REPUTATION
-
-[x] RELATIONSHIP
-
-[x] SAVE FORMAT
-
-[x] ENGINE NOTES
-
-[x] ENGINE GLOSSARY
-
-[x] ENGINE CHANGELOG
-
-[x] ENGINE ROADMAP
-
-Goal
-
-Engine สามารถรันเกมได้
+MODULE DOCUMENTS
 
 ---
 
-# PHASE 2
+# 2. DEVELOPMENT PRINCIPLE
 
-WORLD SYSTEM
+การพัฒนา ASTER ENGINE
 
-Status
+ใช้หลัก:
+
+## Refactor Before Create
+
+ปรับปรุงระบบเดิมก่อนสร้างใหม่
+
+---
+
+## Consistency Before Expansion
+
+ความถูกต้องของโครงสร้าง
+
+มาก่อนการเพิ่ม Feature
+
+---
+
+## Production Before Complexity
+
+ระบบที่ใช้งานได้จริง
+
+สำคัญกว่าความซับซ้อน
+
+---
+
+# 3. CURRENT ENGINE STATUS
+
+Version:
+
+ASTER ENGINE v1.x
+
+Status:
+
+Production
+
+---
+
+ระบบหลักที่มีแล้ว:
+
+- Core System
+- Rules
+- Game Master Framework
+- Combat
+- Dice
+- Medical
+- Navigation
+- Reputation
+- Relationship
+- Devil Fruit
+- Haki
+- Save System
+
+---
+
+# 4. COMPLETED PHASES
+
+## Phase 1
+
+Foundation
+
+สถานะ:
+
+Complete
+
+ประกอบด้วย:
+
+- Core Documents
+- Authority Structure
+- Repository Standard
+
+---
+
+## Phase 2
+
+System Modules
+
+สถานะ:
+
+Complete
+
+ประกอบด้วย:
+
+- Gameplay Modules
+- Support Systems
+- Reference Documents
+
+# 5. CURRENT WORK PHASE
+
+## Repository Stabilization
+
+Status:
 
 In Progress
 
-Modules
+เป้าหมาย:
 
-[ ] Island Database
-
-[ ] NPC Database
-
-[ ] Faction Database
-
-[ ] Ship Database
-
-[ ] Devil Fruit Database
-
-[ ] Item Database
-
-[ ] Economy
-
-[ ] News System
-
-Goal
-
-โลกสามารถดำเนินต่อได้เอง
+- ลดข้อมูลซ้ำ
+- ตรวจ Cross Reference
+- ทำมาตรฐาน Markdown
+- ตรวจ Responsibility ของไฟล์
+- ทำ Repository ให้เป็นมาตรฐานเดียวกัน
 
 ---
 
-# PHASE 3
+# 6. FUTURE DEVELOPMENT PHASES
 
-PLAYER SYSTEM
+## Phase 3
+
+Database Expansion
+
+เป้าหมาย:
+
+สร้างฐานข้อมูลโลกให้สมบูรณ์
+
+ประกอบด้วย:
+
+- Islands
+- NPCs
+- Factions
+- Ships
+- Items
+- World Events
+
+---
+
+## Phase 4
+
+Campaign Support
+
+เป้าหมาย:
+
+รองรับ Campaign ระยะยาว
+
+ประกอบด้วย:
+
+- Episode Management
+- Save Evolution
+- World History
+- Long Term Consequence
+
+---
+
+## Phase 5
+
+Advanced Simulation
+
+เป้าหมาย:
+
+เพิ่มความลึกของ World Simulation
+
+เช่น:
+
+- Organization Movement
+- Economy Simulation
+- Political Changes
+- Dynamic Events
+
+---
+
+# 7. FEATURE EXPANSION RULE
+
+การเพิ่มระบบใหม่
+
+ต้องผ่านการตรวจสอบ:
+
+1. มีระบบเดิมรองรับหรือไม่
+
+↓
+
+2. สามารถรวมเข้ากับไฟล์เดิมได้หรือไม่
+
+↓
+
+3. มี Responsibility ชัดเจนหรือไม่
+
+↓
+
+4. มีผลกระทบต่อ Repository หรือไม่
+
+---
+
+ห้ามสร้างระบบใหม่
+
+หากสามารถปรับปรุงระบบเดิมได้
+
+---
+
+# 8. LONG TERM GOAL
+
+ASTER ENGINE
+
+ถูกออกแบบเพื่อรองรับ:
+
+- Campaign มากกว่า 100 Episode
+- World Evolution
+- NPC Development
+- Organization Changes
+- Large Scale Data
+
+---
+
+เป้าหมายสูงสุด:
+
+สร้างโลก ONE PIECE Parallel World
+
+ที่สามารถดำเนินต่อไปได้
+
+อย่างสม่ำเสมอ
+
+และมีเหตุผล
+
+---
+
+# 9. DOCUMENT RELATIONSHIP
+
+SYSTEM.md
+
+↓
+
+กำหนด Vision และ Authority
+
+↓
+
+DESIGN.md
+
+↓
+
+กำหนดแนวทางออกแบบ
+
+↓
+
+ENGINE_ROADMAP.md
+
+↓
+
+กำหนดลำดับพัฒนา
+
+↓
+
+ENGINE_CHANGELOG.md
+
+↓
+
+บันทึกสิ่งที่เปลี่ยนแปลง
+
+---
+
+# 10. DOCUMENT STATUS
+
+Document Name
+
+ENGINE_ROADMAP.md
+
+---
+
+Document Version
+
+2.0
+
+---
+
+Engine Version
+
+ASTER ENGINE v1.x
+
+---
 
 Status
 
-Planned
-
-Modules
-
-[ ] Character Creation
-
-[ ] Inventory
-
-[ ] Equipment
-
-[ ] Crew Management
-
-[ ] Ship Management
-
-[ ] Bounty System
-
-[ ] Reputation Expansion
-
-Goal
-
-ผู้เล่นสามารถใช้ชีวิตได้อย่างอิสระ
+Production
 
 ---
 
-# PHASE 4
+Document Type
 
-WORLD SIMULATION
-
-Status
-
-Planned
-
-Modules
-
-[ ] Dynamic Events
-
-[ ] Political Changes
-
-[ ] Marine Operations
-
-[ ] Pirate Activities
-
-[ ] Revolutionary Operations
-
-[ ] Cross Guild Activities
-
-[ ] Yonko Expansion
-
-Goal
-
-โลกเปลี่ยนแปลงได้เองแม้ไม่มีผู้เล่น
+Development Roadmap
 
 ---
 
-# PHASE 5
+Authority
 
-ADVANCED SYSTEMS
-
-Status
-
-Planned
-
-Modules
-
-[ ] Weather
-
-[ ] Sea Current
-
-[ ] Sailing
-
-[ ] Diseases
-
-[ ] Random Events
-
-[ ] Economy Expansion
-
-[ ] Black Market
-
-[ ] Newspaper
-
-Goal
-
-เพิ่มความสมจริงของโลก
+SYSTEM.md
 
 ---
 
-# PHASE 6
+# END OF DOCUMENT
 
-LONG CAMPAIGN
+ENGINE_ROADMAP.md
 
-Status
+กำหนดทิศทางการพัฒนา Engine
 
-Planned
-
-Modules
-
-[ ] World Timeline
-
-[ ] History Archive
-
-[ ] NPC Aging
-
-[ ] Kingdom Changes
-
-[ ] Memory Expansion
-
-[ ] Multi-Year Campaign
-
-Goal
-
-รองรับการเล่นหลายปีในโลกเกม
-
----
-
-# FUTURE IDEAS
-
-- Multiple Save Slots
-- Co-op Campaign
-- AI Generated Islands
-- AI Generated NPCs
-- Seasonal World Events
-- Legendary Treasure System
-- Ancient Weapons
-- Lost Civilizations
-- Dynamic Pirate Era
-
----
-
-# DEVELOPMENT RULES
-
-เมื่อเพิ่มระบบใหม่
-
-ให้
-
-1. อัปเดต ENGINE_CHANGELOG.md
-
-2. อัปเดต ROADMAP
-
-3. ตรวจสอบความเข้ากันได้กับระบบเดิม
-
-4. ห้ามแก้ระบบโดยทำให้ Save เก่าเสียหาย
-
----
-
-# PROJECT MILESTONE
-
-Milestone 1
-
-Core Engine Complete
-
-Milestone 2
-
-Playable Campaign
-
-Milestone 3
-
-50 Episode Stable Campaign
-
-Milestone 4
-
-100 Episode Persistent World
-
-Milestone 5
-
-PROJECT ASTER ENGINE Complete
-
----
-
-END OF DOCUMENT
+ไม่ใช่เอกสารกำหนดกฎของระบบ

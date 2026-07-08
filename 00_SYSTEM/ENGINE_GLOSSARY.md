@@ -1,263 +1,442 @@
 # ONE PIECE PARALLEL WORLD RPG
-## ENGINE GLOSSARY
+# ASTER ENGINE
+# ENGINE GLOSSARY
 
-Version : 1.0
-Status : Active
+Document Version : 2.0
 
----
+Status : Production
 
-# PURPOSE
+Document Type : Terminology Reference
 
-เอกสารนี้ใช้กำหนดความหมายของคำศัพท์ทั้งหมดที่ใช้ภายใน Engine
+Authority :
 
-ทุกไฟล์ต้องใช้คำเดียวกันเสมอ
-
-ห้ามสร้างคำใหม่ที่มีความหมายซ้ำกัน
+SYSTEM.md
 
 ---
 
-# GAME MASTER (GM)
+# 1. PURPOSE
 
-AI ที่ควบคุมโลกทั้งหมด
+ENGINE_GLOSSARY.md
 
-หน้าที่
+เป็นเอกสารมาตรฐานคำศัพท์
 
-- บรรยายเหตุการณ์
-- ควบคุม NPC
-- ควบคุมศัตรู
-- ตัดสินผลของการกระทำ
-- รักษาความยุติธรรม
+ของ
+
+PROJECT ASTER ENGINE
 
 ---
 
-# PLAYER
+หน้าที่:
 
-ตัวละครหลักของผู้เล่น
-
-ผู้เล่นควบคุมได้เพียงคนเดียว
-
-AI ห้ามควบคุมการตัดสินใจของ Player
+- กำหนดความหมายของคำสำคัญ
+- ลดความเข้าใจผิดระหว่างระบบ
+- ทำให้ AI และผู้พัฒนาใช้คำศัพท์เดียวกัน
 
 ---
 
-# NPC
+ENGINE_GLOSSARY.md
 
-ตัวละครที่ AI ควบคุม
+ไม่กำหนด:
 
-NPC ทุกตัวต้องมี
+- กฎของ Engine
+- Gameplay Rules
+- Canon
+- Database
 
-- บุคลิก
-- เป้าหมาย
-- ความสัมพันธ์
-- ความทรงจำ
-- การตัดสินใจของตัวเอง
+ให้อ้างอิง:
 
-NPC ไม่ใช่เครื่องแจกเควส
+SYSTEM.md
 
----
+RULES.md
 
-# CREW
-
-สมาชิกบนเรือของผู้เล่น
-
-Crew ทุกคนเป็น NPC
-
-มีชีวิต มีอารมณ์ และสามารถลาออก หักหลัง หรือเสียชีวิตได้
+และ Module ที่เกี่ยวข้อง
 
 ---
 
-# FACTION
+# 2. ENGINE TERMS
 
-องค์กรหรือกลุ่มอำนาจในโลก
+## ASTER ENGINE
 
-ตัวอย่าง
+Narrative Simulation Engine
 
-- Marines
-- World Government
-- Revolutionary Army
-- Four Emperors
-- Cross Guild
-- Pirate Crew
+สำหรับจำลองโลก
 
-ทุก Faction มีเป้าหมายของตัวเอง
+ONE PIECE PARALLEL WORLD RPG
 
 ---
 
-# REPUTATION
+## Narrative Simulation
 
-ค่าชื่อเสียง
+ระบบจำลองโลก
 
-สะท้อนภาพลักษณ์ของผู้เล่นในแต่ละพื้นที่หรือแต่ละกลุ่ม
+ที่เหตุการณ์เกิดจาก:
 
-ชื่อเสียงสามารถแตกต่างกันได้
+- การกระทำ
+- เหตุผล
+- สถานการณ์
+- ผลกระทบ
 
-ตัวอย่าง
-
-Marines เกลียด
-
-ประชาชนรัก
-
-โจรสลัดเคารพ
+ไม่ใช่ Script ที่กำหนดไว้ล่วงหน้า
 
 ---
 
-# RELATIONSHIP
+## Living World
 
-ระดับความสัมพันธ์ระหว่างตัวละคร
+โลกที่สามารถดำเนินต่อไปได้
 
-เป็นรายบุคคล
+แม้ไม่มีผู้เล่นอยู่ในเหตุการณ์
 
-ไม่ใช่ชื่อเสียง
+ประกอบด้วย:
 
-ตัวอย่าง
-
-NPC A รักผู้เล่น
-
-NPC B กลัวผู้เล่น
-
-NPC C เกลียดผู้เล่น
+- NPC
+- Organizations
+- Economy
+- Politics
+- Events
 
 ---
 
-# BOUNTY
-
-ค่าหัวของผู้เล่น
-
-เพิ่มขึ้นจากการกระทำ
-
-ไม่ใช่จากเลเวล
-
----
-
-# HAKI
-
-พลังแห่งเจตจำนง
-
-แบ่งเป็น
-
-- Observation
-- Armament
-- Conqueror
-
-เติบโตจากประสบการณ์จริง
-
-ไม่ใช่จาก EXP
-
----
-
-# DEVIL FRUIT
-
-พลังพิเศษจากผลปีศาจ
-
-ผู้ใช้มีได้เพียงหนึ่งผล
-
-ผู้ใช้จะว่ายน้ำไม่ได้
-
----
-
-# DICE CHECK
-
-การทอยเต๋าเพื่อตัดสินผล
-
-ใช้เมื่อผลลัพธ์ไม่แน่นอน
-
-ถ้าผลลัพธ์ชัดเจน
-
-ห้ามทอย
-
----
-
-# DIFFICULTY CLASS (DC)
-
-ค่าความยากของการทดสอบ
-
-กำหนดโดย GM
-
-ไม่เปิดเผยให้ผู้เล่นเห็น
-
----
-
-# TURN
-
-ช่วงเวลาของการกระทำหนึ่งครั้งในการต่อสู้
-
----
-
-# ROUND
-
-หนึ่งรอบของ Combat
-
-ทุกตัวละครจะได้กระทำหนึ่งครั้ง
-
----
-
-# STATUS EFFECT
-
-ผลกระทบต่อร่างกายหรือจิตใจ
-
-ตัวอย่าง
-
-- Bleeding
-- Burn
-- Poison
-- Fear
-- Exhausted
-- Broken Bone
-
-รายละเอียดอยู่ใน MEDICAL.md
-
----
-
-# SAVE
-
-ข้อมูลความคืบหน้าของเกม
-
-เก็บ
-
-- Episode
-- Player
-- Crew
-- Ship
-- Inventory
-- Reputation
-- Relationship
-- World State
-
----
-
-# WORLD STATE
+## World State
 
 สถานะปัจจุบันของโลก
 
-เช่น
+เช่น:
 
-- เมืองถูกทำลาย
-- ผู้นำเสียชีวิต
-- จักรพรรดิเปลี่ยน
-- เกิดสงคราม
-
-ทุกเหตุการณ์ต้องส่งผลต่อโลก
-
----
-
-# CANON
-
-กฎดั้งเดิมของจักรวาล ONE PIECE
-
-Engine ต้องเคารพ Canon
-
-ยกเว้นเมื่อระบุไว้ว่าเป็น Original Content
+- สถานที่
+- เหตุการณ์
+- องค์กร
+- ตัวละคร
+- สถานการณ์
 
 ---
 
-# PARALLEL WORLD
+## Current State
 
-โลกคู่ขนาน
+ข้อมูลปัจจุบันที่ใช้ในการเล่น
 
-ใช้กฎทุกอย่างของ ONE PIECE
+โดยอ้างอิงจาก:
 
-แต่ตัวละครสำคัญทั้งหมดเป็น Original Character
+SAVE
 
 ---
 
-END OF DOCUMENT
+## Canon
+
+ข้อมูลที่ถือเป็นความจริงภายในโลก
+
+แบ่งเป็น:
+
+- Permanent Canon
+- Dynamic Canon
+- Session Canon
+
+---
+
+# 3. REPOSITORY TERMS
+
+## Repository
+
+พื้นที่จัดเก็บข้อมูลทั้งหมดของ Engine
+
+ประกอบด้วย:
+
+- System Documents
+- Database
+- Save
+- Logs
+- Archives
+
+---
+
+## Source of Truth
+
+แหล่งข้อมูลหลัก
+
+ที่มีอำนาจสูงสุดสำหรับข้อมูลประเภทนั้น
+
+---
+
+## Single Source of Truth
+
+หลักการที่ว่า:
+
+ข้อมูลหนึ่งประเภท
+
+ควรมีแหล่งอ้างอิงหลักเพียงแห่งเดียว
+
+# 4. GAMEPLAY TERMS
+
+## Action
+
+การกระทำของตัวละคร
+
+เช่น:
+
+- เดินทาง
+- ต่อสู้
+- พูดคุย
+- สำรวจ
+- ใช้ความสามารถ
+
+---
+
+## Resolution
+
+กระบวนการตัดสินผลของ Action
+
+โดยพิจารณา:
+
+- Situation
+- Rules
+- Ability
+- Environment
+- Logic
+- Dice
+
+---
+
+## Consequence
+
+ผลลัพธ์ที่เกิดจากการกระทำ
+
+สามารถส่งผลต่อ:
+
+- ตัวละคร
+- NPC
+- องค์กร
+- โลก
+
+---
+
+## Event
+
+เหตุการณ์ที่เกิดขึ้นภายในโลก
+
+สามารถเกิดจาก:
+
+- ผู้เล่น
+- NPC
+- องค์กร
+- โลก
+
+---
+
+## Session
+
+ช่วงเวลาการเล่นหนึ่งครั้ง
+
+ประกอบด้วย:
+
+- Action
+- Result
+- Event
+- Update
+
+---
+
+## Episode
+
+หน่วยบันทึกการดำเนินเรื่อง
+
+ใช้สำหรับ:
+
+- LOG
+- SAVE Update
+- Campaign Progress
+
+---
+
+# 5. CHARACTER TERMS
+
+## Character State
+
+สถานะปัจจุบันของตัวละคร
+
+ประกอบด้วย:
+
+- Health
+- Ability
+- Inventory
+- Location
+- Relationship
+
+---
+
+## NPC
+
+Non-Player Character
+
+ตัวละครที่ไม่ได้ควบคุมโดยผู้เล่น
+
+ใน ASTER ENGINE
+
+NPC ต้องมี:
+
+- เป้าหมาย
+- บุคลิก
+- ความทรงจำ
+- แรงจูงใจ
+
+---
+
+## Faction
+
+องค์กรหรือกลุ่มที่มี:
+
+- เป้าหมาย
+- อำนาจ
+- ความสัมพันธ์
+- การเคลื่อนไหว
+
+---
+
+# 6. SYSTEM TERMS
+
+## Module
+
+ระบบเฉพาะภายใน Engine
+
+ตัวอย่าง:
+
+- COMBAT.md
+- DICE.md
+- MEDICAL.md
+- HAKI.md
+
+---
+
+## System Document
+
+เอกสารที่กำหนดมาตรฐานของ Engine
+
+เช่น:
+
+- SYSTEM.md
+- RULES.md
+- GAME_MASTER.md
+
+---
+
+## Database
+
+ข้อมูลถาวรของโลก
+
+เช่น:
+
+- World Data
+- NPC Data
+- Faction Data
+
+---
+
+## SAVE
+
+Snapshot ปัจจุบันของโลก
+
+ใช้สำหรับเริ่ม Session ถัดไป
+
+---
+
+## LOG
+
+ประวัติสิ่งที่เกิดขึ้น
+
+ไม่ใช่สถานะปัจจุบัน
+
+---
+
+## ARCHIVE
+
+ข้อมูลย้อนหลังเพื่ออ้างอิง
+
+---
+
+# 7. DEVELOPMENT TERMS
+
+## Audit
+
+การตรวจสอบไฟล์
+
+เพื่อดู:
+
+- Responsibility
+- Dependency
+- Consistency
+
+---
+
+## Refactor
+
+การปรับปรุงโครงสร้างเดิม
+
+โดยรักษาข้อมูลสำคัญไว้
+
+---
+
+## Replace
+
+การนำไฟล์ใหม่
+
+แทนไฟล์เดิม
+
+หลังผ่านการตรวจสอบ
+
+---
+
+## Create
+
+การสร้างข้อมูลใหม่
+
+เมื่อไม่สามารถแก้ไขของเดิมได้
+
+---
+
+# 8. DOCUMENT STATUS
+
+Document Name
+
+ENGINE_GLOSSARY.md
+
+---
+
+Document Version
+
+2.0
+
+---
+
+Engine Version
+
+ASTER ENGINE v1.x
+
+---
+
+Status
+
+Production
+
+---
+
+Document Type
+
+Terminology Reference
+
+---
+
+Authority
+
+SYSTEM.md
+
+---
+
+# END OF DOCUMENT
+
+ENGINE_GLOSSARY.md
+
+เป็นมาตรฐานคำศัพท์ของ ASTER ENGINE
+
+หากเกิดความไม่แน่ใจด้านความหมาย
+
+ให้ใช้เอกสารนี้เป็น Reference
+
+โดยไม่สร้าง Rule ใหม่

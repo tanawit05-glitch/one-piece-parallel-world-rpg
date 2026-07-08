@@ -1,390 +1,432 @@
 # ONE PIECE PARALLEL WORLD RPG
+# ASTER ENGINE
+# SAVE FORMAT SYSTEM
 
-# SAVE FORMAT
+Document Version : 2.0
 
-Document : SAVE_FORMAT
+Status : Production
 
-Version : 1.0
+Document Type : System Standard
 
-Status : Active
+Authority :
 
-Priority : Highest
-
-Dependencies :
-- SYSTEM.md
-- PLAYER
-- WORLD
-- RELATIONSHIP.md
-- REPUTATION.md
+SYSTEM.md
 
 ---
 
-# PURPOSE
+# 1. PURPOSE
 
-SAVE FORMAT
+SAVE_FORMAT.md
 
-ใช้กำหนดรูปแบบการบันทึกข้อมูลของเกม
+กำหนดมาตรฐานโครงสร้างข้อมูล SAVE
 
-ทุก Save
+ของ
 
-ต้องใช้รูปแบบเดียวกัน
-
-เพื่อให้ AI สามารถอ่าน
-
-อัปเดต
-
-และดำเนินเรื่องต่อได้
+PROJECT ASTER ENGINE
 
 ---
 
-# SAVE STRUCTURE
+หน้าที่ของ SAVE_FORMAT.md คือ
 
-ทุก Save ต้องประกอบด้วย
-
-1. Episode
-
-2. Date
-
-3. Current Location
-
-4. Player
-
-5. Crew
-
-6. Ship
-
-7. Inventory
-
-8. Devil Fruit
-
-9. Haki
-
-10. Reputation
-
-11. Relationship
-
-12. Bounty
-
-13. World State
-
-14. Active Quests
-
-15. Completed Quests
-
-16. NPC Changes
-
-17. World Events
-
-18. Notes
+- กำหนดรูปแบบข้อมูล SAVE
+- กำหนดมาตรฐาน Field
+- กำหนดโครงสร้าง Snapshot
+- ทำให้ AI อ่านและบันทึกข้อมูลได้ตรงกัน
 
 ---
 
-# TEMPLATE
+SAVE_FORMAT.md
 
-Episode :
+ไม่กำหนด
 
-Date :
+- กฎการเล่น
+- เหตุการณ์ในโลก
+- Canon
+- วิธีตัดสินใจของ AI
 
----
+ให้อ้างอิง:
 
-## CURRENT LOCATION
+SYSTEM.md
 
-Sea :
+RULES.md
 
-Island :
-
-Specific Location :
-
-Weather :
-
-Time :
+GAME_MASTER.md
 
 ---
 
-## PLAYER
+# 2. SAVE SYSTEM CONCEPT
 
-Name :
+SAVE
 
-Age :
+คือ
 
-Occupation :
-
-Level : None
-
-Devil Fruit :
-
-Haki :
-
-Current Condition :
-
-Status Effects :
-
-Money :
-
-Bounty :
+Snapshot ล่าสุดของโลก
 
 ---
 
-## CREW
+SAVE ไม่ใช่:
 
-Captain :
-
-Members :
-
-Current Morale :
-
----
-
-## SHIP
-
-Name :
-
-Class :
-
-Condition :
-
-Damage :
-
-Supplies :
+- บันทึกเรื่องราว
+- บทสรุป Episode
+- Log การสนทนา
+- ประวัติทั้งหมด
 
 ---
 
-## INVENTORY
+หน้าที่ของ SAVE คือ
 
-Weapons
+ตอบคำถาม:
 
-Armor
-
-Medicine
-
-Food
-
-Special Items
-
-Berry
+"ตอนนี้โลกอยู่ในสถานะใด"
 
 ---
 
-## HAKI
+# 3. SAVE RESPONSIBILITY
 
-Observation
+SAVE เก็บ:
 
-Armament
-
-Conqueror
-
-Current Progress
-
----
-
-## DEVIL FRUIT
-
-Fruit Name
-
-Mastery
-
-Awakening
-
-Current Limitations
+- Current World State
+- Current Player State
+- Current Crew State
+- Current Ship State
+- Current Faction State
+- Current NPC State
+- Current Location
+- Current Events
 
 ---
 
-## REPUTATION
+SAVE ไม่เก็บ:
 
-Marines
+- บทสนทนา
+- การบรรยายฉาก
+- รายละเอียดการต่อสู้
+- Dice Roll History
 
-World Government
+ข้อมูลเหล่านี้อยู่ใน:
 
-Citizens
-
-Pirates
-
-Cross Guild
-
-Revolutionary Army
-
-Kingdoms
-
-Underworld
-
-Merchant Guild
-
-Others
+LOG
 
 ---
 
-## RELATIONSHIP
+# 4. SAVE STRUCTURE
 
-Important NPC
+โครงสร้างหลัก:
 
-Current Relationship
 
-Last Interaction
+# 7. CURRENT_CREW
 
----
+เก็บข้อมูลลูกเรือปัจจุบัน
 
-## ACTIVE QUESTS
+ประกอบด้วย:
 
--
-
--
-
--
-
----
-
-## COMPLETED QUESTS
-
--
-
--
-
--
+- Crew Members
+- Roles
+- Conditions
+- Relationships
+- Current Status
 
 ---
 
-## WORLD STATE
+# 8. CURRENT_SHIPS
 
-Important Events
+เก็บสถานะเรือปัจจุบัน
 
-Political Changes
+ประกอบด้วย:
 
-Destroyed Locations
-
-New Leaders
-
-Wars
-
-Marine Activity
-
-Yonko Activity
-
-Cross Guild Activity
-
-Revolutionary Activity
+- Ship Identity
+- Location
+- Condition
+- Damage
+- Upgrade
+- Supplies
 
 ---
 
-## NPC CHANGES
+# 9. CURRENT_FACTIONS
 
-Dead
+เก็บสถานะองค์กรที่เกี่ยวข้อง
 
-Missing
+ประกอบด้วย:
 
-Joined
-
-Left
-
-Captured
-
-Promoted
+- Organization Status
+- Relations
+- Active Conflicts
+- Influence Changes
 
 ---
 
-## CURRENT STATUS EFFECTS
+# 10. CURRENT_NPCS
 
--
+เก็บสถานะ NPC ปัจจุบัน
 
--
+ประกอบด้วย:
 
--
-
----
-
-## NOTES
-
-Free space
-
-สำหรับข้อมูลที่สำคัญ
-
-แต่ไม่เข้าหมวดอื่น
+- Identity
+- Location
+- Condition
+- Relationship
+- Current Goal
+- Important Changes
 
 ---
 
-# SAVE RULES
+# 11. CURRENT_ISLANDS
 
-AI
+เก็บสถานะเกาะที่ได้รับผลกระทบ
 
-ต้องอัปเดต
+ประกอบด้วย:
 
-เฉพาะข้อมูลที่เปลี่ยน
-
-ห้ามรีเซ็ตข้อมูลเดิม
-
----
-
-ข้อมูลที่ไม่เปลี่ยน
-
-ให้คงไว้
+- Population
+- Economy
+- Government
+- Security
+- Major Events
 
 ---
 
-# MEMORY PRIORITY
+# 12. CURRENT_ITEMS
 
-เมื่อเกิดข้อมูลขัดแย้ง
+เก็บรายการสิ่งของสำคัญ
 
-AI
+ประกอบด้วย:
 
-ต้องเชื่อตาม
-
-Save ล่าสุด
-
----
-
-# SAVE FREQUENCY
-
-ควรสร้าง Save
-
-เมื่อ
-
-- จบ Episode
-
-- จบ Arc
-
-- เดินทางถึงเกาะใหม่
-
-- หลังเหตุการณ์สำคัญ
-
-- หลังสงคราม
+- Item Location
+- Owner
+- Condition
+- Quantity
 
 ---
 
-# VERSION
+# 13. CURRENT_EVENTS
 
-ทุก Save
+เก็บ Event ที่กำลังดำเนินอยู่
 
-ต้องระบุ
+ประกอบด้วย:
+
+- Event Name
+- Location
+- Participants
+- Current Status
+- Possible Consequences
+
+---
+
+# 14. SAVE UPDATE RULES
+
+เมื่อเกิดการเปลี่ยนแปลง
+
+AI ต้อง Update เฉพาะข้อมูลที่ได้รับผลกระทบ
+
+---
+
+ตัวอย่าง:
+
+ผู้เล่นได้รับบาดเจ็บ
+
+↓
+
+CURRENT_PLAYER
+
+---
+
+เรือเสียหาย
+
+↓
+
+CURRENT_SHIPS
+
+---
+
+NPC สำคัญเสียชีวิต
+
+↓
+
+CURRENT_NPCS
+
+↓
+
+CURRENT_FACTIONS
+
+(ถ้ามีผลต่อองค์กร)
+
+---
+
+# 15. DATA CONSISTENCY
+
+ข้อมูลใน SAVE ทุกส่วน
+
+ต้องสอดคล้องกัน
+
+---
+
+ตัวอย่าง:
+
+หาก NPC เสียชีวิต
+
+ต้องตรวจสอบ:
+
+- NPC Status
+- Relationship
+- Faction
+- Active Events
+
+---
+
+หากตำแหน่งเปลี่ยน
+
+ต้องตรวจสอบ:
+
+- Player Location
+- Ship Location
+- Crew Location
+
+---
+
+# 16. SAVE AND LOG SEPARATION
+
+SAVE
+
+เก็บ:
+
+"โลกตอนนี้เป็นอย่างไร"
+
+---
+
+LOG
+
+เก็บ:
+
+"เกิดอะไรขึ้นก่อนหน้านี้"
+
+---
+
+ห้ามใช้ SAVE แทน LOG
+
+และ
+
+ห้ามใช้ LOG แทน SAVE
+
+---
+
+# 17. LOADING ORDER
+
+เมื่อเริ่ม Session ใหม่
+
+AI ควรอ่าน:
+
+CURRENT_WORLD
+
+↓
+
+CURRENT_PLAYER
+
+↓
+
+CURRENT_CREW
+
+↓
+
+CURRENT_SHIPS
+
+↓
+
+CURRENT_FACTIONS
+
+↓
+
+CURRENT_NPCS
+
+↓
+
+CURRENT_ISLANDS
+
+↓
+
+CURRENT_ITEMS
+
+↓
+
+CURRENT_EVENTS
+
+---
+
+# 18. DOCUMENT RELATIONSHIP
+
+SYSTEM.md
+
+↓
+
+กำหนดมาตรฐาน SAVE
+
+↓
+
+SAVE_FORMAT.md
+
+↓
+
+กำหนดโครงสร้างข้อมูล
+
+↓
+
+SAVE_MANAGER.md
+
+↓
+
+จัดการการบันทึกและโหลด
+
+↓
+
+10_SAVE
+
+↓
+
+ข้อมูลสถานะจริงของโลก
+
+---
+
+# DOCUMENT STATUS
+
+Document Name
+
+SAVE_FORMAT.md
+
+---
+
+Document Version
+
+2.0
+
+---
 
 Engine Version
 
-เพื่อป้องกัน
-
-ปัญหาความเข้ากันได้
+ASTER ENGINE v1.x
 
 ---
 
-# GOLDEN RULE
+Status
 
-Save
-
-Is
-
-The
-
-Current
-
-Truth
-
-ของโลก
-
-ทุกระบบ
-
-ต้องอ้างอิง
-
-Save ล่าสุด
-
-เสมอ
+Production
 
 ---
 
-END OF SAVE FORMAT
+Authority
+
+System Standard
+
+---
+
+# END OF DOCUMENT
+
+SAVE_FORMAT.md
+
+กำหนดรูปแบบข้อมูล SAVE
+
+เพื่อให้สถานะของโลก
+
+สามารถถูกบันทึก
+
+โหลด
+
+และตรวจสอบได้อย่างต่อเนื่อง

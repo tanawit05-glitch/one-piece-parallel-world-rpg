@@ -1,39 +1,82 @@
 # SHIP DATABASE
 
-PROJECT ASTER ENGINE  
-Module: 04_SHIPS  
-Version: 1.0 (Living Vessel Database)
+PROJECT ASTER ENGINE
+
+Module:
+04_SHIPS
+
+Version:
+2.0
+
+Status:
+Production
+
+Authority:
+Ship Database
+
+Dependencies:
+
+- SYSTEM.md
+- RULES.md
+- GAME_MASTER.md
+- SAVE_FORMAT.md
+- NAVIGATION.md
+- COMBAT.md
 
 
 ---
 
-# ⚓ SHIP DATABASE OVERVIEW
+# 1. PURPOSE
 
 
-ฐานข้อมูลเรือทั้งหมดในโลก
+SHIP DATABASE
 
+เป็นฐานข้อมูลเรือทั้งหมดในโลก
 
-ใน ASTER ENGINE
+ASTER ENGINE
 
-เรือไม่ใช่เพียงพาหนะ
+เรือไม่ใช่เพียง Object
 
-แต่เป็น:
-
-"สิ่งที่เดินทางร่วมกับผู้คน"
-
-ทุกเรือต้องมี:
+แต่เป็น Entity ที่มี:
 
 - ประวัติ
-- ตัวตน
+- สภาพ
+- ความสัมพันธ์
 - ความทรงจำ
-- ความเสียหาย
-- ความสัมพันธ์กับ Crew
+- ผลกระทบจากเหตุการณ์
+
+
+หน้าที่ของไฟล์นี้:
+
+- เก็บข้อมูลเรือ
+- ติดตามสถานะเรือ
+- บันทึกประวัติ
+- เชื่อมโยงกับ Crew และ World
+
+
+ไม่ทำหน้าที่:
+
+- กำหนด Combat Rules
+- กำหนด Navigation Rules
+- กำหนด Ship Evolution System
 
 
 ---
 
-# 🚢 SHIP INSTANCE TEMPLATE
+# 2. SHIP RECORD STANDARD
 
+
+## Ship ID
+
+รหัสเฉพาะของเรือ
+
+
+ตัวอย่าง:
+
+SHIP-0001
+
+
+---
 
 ## Basic Information
 
@@ -43,42 +86,12 @@ Ship Name:
 -
 
 
-Ship Status:
-
-- Active
-- Damaged
-- Destroyed
-- Lost
-- Captured
-- Retired
-
-
-Current Owner:
-
--
-
-
-Previous Owner:
-
--
-
-
-Affiliation:
-
--
-
-
-Captain:
+Ship Type:
 
 -
 
 
 Ship Class:
-
--
-
-
-Ship Type:
 
 -
 
@@ -93,11 +106,6 @@ Builder:
 -
 
 
-Shipwright / Workshop:
-
--
-
-
 Creation Date:
 
 -
@@ -108,159 +116,108 @@ First Appearance:
 Episode:
 
 
+Current Status:
+
+- Active
+- Damaged
+- Destroyed
+- Lost
+- Captured
+- Retired
+
+
 Current Location:
 
 -
 
-
----
-
-# 🧬 SHIP IDENTITY
+# 3. SHIP CONDITION
 
 
-## Purpose
-
-เหตุผลที่เรือลำนี้ถูกสร้างขึ้น
-
-- Exploration
-- Combat
-- Transport
-- Command
-- Raid
-- Unknown
+ข้อมูลสภาพปัจจุบันของเรือ
 
 
----
-
-## Ship Persona
-
-
-บุคลิกของเรือ
-
-
-Possible Traits:
-
-- Loyal
-- Wild
-- Protective
-- Aggressive
-- Silent Observer
-- Stubborn
-- Curious
-
-
-Current Personality:
-
--
-
-
----
-
-## Ship Symbol
-
-
-Figurehead:
-
--
-
-
-Flag:
-
--
-
-
-Meaning:
-
--
-
-
----
-
-# 📊 SHIP CONDITION
-
-
-## Core Condition
-
-
-### Hull Integrity
+## Hull Integrity
 
 สภาพโครงสร้างเรือ
 
 -
 
 
-### Mobility
+## Mobility Condition
 
-ความสามารถในการเดินทาง
-
--
-
-
-### Endurance
-
-ความสามารถในการรับความเสียหาย
+สภาพความสามารถในการเดินทาง
 
 -
 
 
-### Crew Harmony
+## Equipment Condition
 
-ความสัมพันธ์ระหว่างเรือกับลูกเรือ
+สภาพอุปกรณ์สำคัญ
 
 -
 
 
-### Presence
+## Damage Status
 
-ชื่อเสียงและตัวตนของเรือในโลก
+ความเสียหายปัจจุบัน
+
+-
+
+
+## Repair Status
+
+สถานะการซ่อมแซม
 
 -
 
 
 ---
 
-# 🧱 SHIP STRUCTURE
+# 4. SHIP STRUCTURE
+
+
+ข้อมูลพื้นที่ภายในเรือ
 
 
 ## Main Areas
 
 
-### Captain Room
+Captain Room:
 
 -
 
 
-### Crew Quarters
+Crew Quarters:
 
 -
 
 
-### Medical Bay
+Medical Bay:
 
 -
 
 
-### Kitchen
+Kitchen:
 
 -
 
 
-### Storage
+Storage:
 
 -
 
 
-### Workshop
+Workshop:
 
 -
 
 
-### Control Area
+Control Area:
 
 -
 
 
-### Observation Deck
+Observation Deck:
 
 -
 
@@ -270,140 +227,65 @@ Meaning:
 ## Special Areas
 
 
--
-
-
----
-
-# ⚔️ COMBAT SYSTEM
-
-
-## Combat Role
-
--
-
-
-## Main Weapon
-
--
-
-
-## Secondary Weapon
-
--
-
-
-## Defense System
-
--
-
-
-## Special Combat Ability
-
--
-
-
-## Combat Weakness
+พื้นที่พิเศษ:
 
 -
 
 
 ---
 
-# 🌊 TRAVEL SYSTEM
+# 5. SHIP EQUIPMENT
 
 
-## Navigation Capability
-
--
+ข้อมูลอุปกรณ์ประจำเรือ
 
 
-## Required Crew Roles
+## Main Equipment
 
 -
 
 
-## Sea Compatibility
+## Weapons
 
 -
 
 
-## Weather Resistance
+## Defensive Equipment
 
 -
 
 
-## Calm Belt Capability
+## Special Equipment
 
 -
 
 
-## Special Travel Ability
+หมายเหตุ:
 
--
+รายละเอียดการใช้งานระบบต่อสู้
+
+ให้อ้างอิง COMBAT.md
 
 
 ---
 
-# 🧠 SHIP MEMORY SYSTEM
+# 6. SHIP CREW CONNECTION
 
 
-## Journey Memories
+ความสัมพันธ์ระหว่างเรือและผู้ใช้งาน
 
 
-สถานที่สำคัญที่เคยเดินทางผ่าน
-
-
--
-
-
----
-
-## Combat Memories
-
-
-สงครามและการต่อสู้ที่เคยผ่าน
-
+## Current Captain
 
 -
-
-
----
-
-## Emotional Memories
-
-
-เหตุการณ์ที่มีความหมายต่อ Crew
-
-
--
-
-
----
-
-# 🔗 SHIP AND CREW CONNECTION
 
 
 ## Current Crew
 
-
-Captain:
-
 -
 
 
-Members:
-
--
-
-
----
-
-## Harmony Status
-
-
-ความสัมพันธ์ระหว่างเรือและ Crew
-
+## Crew History
 
 -
 
@@ -421,12 +303,49 @@ Members:
 
 ---
 
-# 🔥 SHIP DAMAGE RECORD
+# 7. SHIP MEMORY
 
 
-ความเสียหายไม่ใช่เพียงตัวเลข
+เรือสามารถมีประวัติจากเหตุการณ์ที่ผ่านมา
 
-แต่คือประวัติศาสตร์ของเรือ
+
+## Journey Memory
+
+
+สถานที่สำคัญที่เคยเดินทางผ่าน
+
+
+-
+
+
+---
+
+## Battle Memory
+
+
+เหตุการณ์การต่อสู้สำคัญ
+
+
+-
+
+
+---
+
+## Crew Memory
+
+
+เหตุการณ์สำคัญของลูกเรือ
+
+
+-
+
+
+---
+
+# 8. DAMAGE RECORD
+
+
+บันทึกความเสียหาย
 
 
 ## Major Damage
@@ -435,83 +354,94 @@ Members:
 -
 
 
+---
+
 ## Repairs
 
 
 -
 
 
+---
+
 ## Permanent Changes
 
 
--
-
-
----
-
-# 🌱 SHIP EVOLUTION
-
-
-## Current Evolution Stage
+การเปลี่ยนแปลงถาวรของเรือ
 
 
 -
 
-
-## Evolution Trigger
-
-
-เหตุการณ์ที่ทำให้เรือเปลี่ยนแปลง
+# 9. SHIP HISTORY
 
 
--
-
-
-## Upgrades
-
-
--
-
-
-## New Facilities
-
-
--
-
-
-## Symbolic Changes
-
-
-การเปลี่ยนแปลงที่มีความหมายต่อ Crew
-
-
--
-
-
----
-
-# 📜 SHIP HISTORY
+ประวัติของเรือ
 
 
 ## Origin Story
 
+
+เหตุผลที่เรือถูกสร้างขึ้น
+
+
+-
+
+
+---
+
+## Previous Owners
+
+
+เจ้าของเดิม
+
+
+-
+
+
+---
+
+## Major Events
+
+
+เหตุการณ์สำคัญที่เกี่ยวข้องกับเรือ
+
+
+-
+
+
+---
+
+## Famous Moments
+
+
+เหตุการณ์ที่ทำให้เรือเป็นที่จดจำ
+
+
+-
+
+
+---
+
+# 10. OWNERSHIP HISTORY
+
+
+ลำดับผู้ครอบครองเรือ
+
+
+## Current Owner
 
 -
 
 
 ## Previous Owners
 
-
 -
 
 
-## Major Events
+## Ownership Changes
 
 
--
-
-
-## Famous Moments
+เหตุผลที่เปลี่ยนเจ้าของ
 
 
 -
@@ -519,145 +449,199 @@ Members:
 
 ---
 
-# 👥 CREW ASSIGNMENT
+# 11. CURRENT WORLD STATE
 
 
-## Captain
-
--
+สถานะปัจจุบันของเรือ
 
 
-## Navigator
+## Current Location
 
 -
 
 
-## Doctor
+## Current Destination
 
 -
 
 
-## Shipwright
+## Cargo
 
 -
 
 
-## Cook
+## Supplies
 
 -
 
 
-## Combat Members
+## Passengers
 
 -
 
 
-## Other Members
+## Prisoners
 
 -
 
 
----
-
-# 📍 CURRENT STATUS
-
-
-Location:
+## Current Damage
 
 -
 
 
-Destination:
-
--
-
-
-Cargo:
-
--
-
-
-Supplies:
-
--
-
-
-Passengers:
-
--
-
-
-Prisoners:
-
--
-
-
-Damage Status:
-
--
-
-
-Repair Required:
+## Repair Required
 
 -
 
 
 ---
 
-# 🎭 NARRATIVE IMPORTANCE
+# 12. NARRATIVE IMPORTANCE
 
 
-Importance Level:
+ความสำคัญต่อโลกและเรื่องราว
+
+
+## Importance Level
+
 
 - Minor
 - Major
-- Main
 - Legendary
 
 
-Role In Story:
+---
+
+## Role In World
+
+
+บทบาทของเรือในโลก
+
 
 -
 
 
-Can Be Destroyed:
+---
+
+## Can Be Destroyed
+
 
 Yes / No
 
 
-Condition For Destruction:
+---
 
--
+## Condition For Destruction
 
 
-Impact If Lost:
+เงื่อนไขที่ทำให้เรือถูกทำลาย
+
 
 -
 
 
 ---
 
-# 🧩 GM NOTES
+## Impact If Lost
 
 
-## Narrative Rules
+ผลกระทบเมื่อเรือสูญหาย
 
 
-- เรือทุกลำต้องมีเหตุผลในการปรากฏตัว
-- เรือทุกลำสามารถเปลี่ยนแปลงตามเหตุการณ์
-- ความเสียหายต้องส่งผลต่อเรื่องราว
-- เรือที่มีประวัติยาวนานควรมี Memory
+-
 
 
 ---
 
-# TAGS
+# 13. TAGS
 
 
 - Ship
-- Living Vessel
+- Vessel
+- Crew Related
+- Historical
 
 
 ---
 
-# END OF FILE
+# 14. GM DATABASE RULES
+
+
+## Update Rules
+
+
+ข้อมูลเรือต้องเปลี่ยนแปลงเมื่อ:
+
+
+- เกิดเหตุการณ์ในโลก
+- เกิดความเสียหาย
+- เปลี่ยนเจ้าของ
+- มีการซ่อมแซม
+- มีการดัดแปลง
+
+
+---
+
+## Restrictions
+
+
+ห้าม:
+
+
+- เปลี่ยนสถานะเรือเพื่อช่วยผู้เล่น
+- ทำลายเรือเพื่อสร้างดราม่าโดยไม่มีเหตุผล
+- เพิ่มความสามารถใหม่โดยไม่มีเหตุการณ์รองรับ
+
+
+---
+
+# 15. RELATED DOCUMENTS
+
+
+- SYSTEM.md
+- RULES.md
+- GAME_MASTER.md
+- NAVIGATION.md
+- COMBAT.md
+- SAVE_FORMAT.md
+
+
+---
+
+# DOCUMENT STATUS
+
+
+Document Name:
+
+SHIP_DATABASE.md
+
+
+Version:
+
+2.0
+
+
+Engine:
+
+ASTER ENGINE v1.x
+
+
+Status:
+
+Production
+
+
+Authority:
+
+Ship Database
+
+
+Last Reviewed:
+
+TBD
+
+
+---
+
+# END OF DOCUMENT

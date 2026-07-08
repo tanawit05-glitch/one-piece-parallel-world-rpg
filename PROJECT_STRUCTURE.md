@@ -1,207 +1,65 @@
-# PROJECT ASTER ENGINE
+# ONE PIECE PARALLEL WORLD RPG
+# ASTER ENGINE
+# PROJECT STRUCTURE
 
-## Project Structure
+Document Version : 2.1
 
-โครงสร้างนี้กำหนดหน้าที่ของแต่ละโฟลเดอร์ภายในโปรเจกต์ เพื่อให้ข้อมูลเป็นระเบียบ ค้นหาได้ง่าย และรักษา Canon ของโลกให้มีความต่อเนื่อง
+Status : Production
 
----
-
-## 00_SYSTEM
-**Engine Rules & Core Systems**
-
-เอกสารหลักของระบบเกม
-
-ตัวอย่าง
-- ASTER_ENGINE.md
-- SYSTEM.md
-- RULES.md
-- GAME_MASTER.md
-- COMBAT.md
-- MEDICAL.md
-- NAVIGATION.md
-- DICE.md
+Authority : Repository Architecture
 
 ---
 
-## 01_WORLD
-**World Database**
+# 1. PURPOSE
 
-ข้อมูลโลกทั้งหมด
+PROJECT_STRUCTURE.md
 
-- ทะเล
-- เกาะ
-- เมือง
-- อาณาจักร
-- ภูมิประเทศ
-- ประวัติศาสตร์
-- ภูมิอากาศ
+กำหนดโครงสร้าง Repository
 
----
+ของ
 
-## 02_PLAYER
-**Player Systems**
+PROJECT ASTER ENGINE
 
-ข้อมูลตัวละครผู้เล่น
+หน้าที่คือ
 
-- Character Profile
-- Skills
-- Haki
-- Devil Fruit
-- Inventory
-- Reputation
-- Progression
+- กำหนดตำแหน่งจัดเก็บข้อมูล
+- กำหนด Responsibility ของแต่ละ Folder
+- ป้องกันข้อมูลซ้ำ
+- ป้องกันข้อมูลผิดหมวด
+- ทำให้ AI เข้าใจโครงสร้าง Repository ตรงกัน
 
 ---
 
-## 03_CREW
-**Crew Systems**
+# 2. REPOSITORY PRINCIPLE
 
-ข้อมูลลูกเรือทั้งหมด
+Repository ใช้หลัก
 
-- Crew Members
-- Crew Roles
-- Crew Relationships
-- Crew Progression
+Single Source of Truth
 
 ---
 
-## 04_SHIPS
-**Ship Systems**
+ข้อมูลแต่ละประเภท
 
-ข้อมูลเรือทุกประเภท
-
-- Pirate Ships
-- Marine Ships
-- Merchant Ships
-- Ship Upgrades
-- Ship Equipment
+ต้องมีแหล่งข้อมูลหลักเพียงแห่งเดียว
 
 ---
 
-## 05_FACTIONS
-**Organizations**
+ห้าม:
 
-องค์กรทั้งหมดในโลก
-
-- Marines
-- Pirate Crews
-- Revolutionary Groups
-- Kingdoms
-- Companies
-- Guilds
-- Criminal Organizations
+- เก็บข้อมูลเดียวกันหลายที่
+- สร้าง Database ซ้ำ
+- เก็บข้อมูลผิดหมวด
 
 ---
 
-## 06_NPCS
-**NPC Systems**
+หากต้องอ้างอิงข้อมูล
 
-ฐานข้อมูล NPC
+ให้ใช้ Reference
 
-- Named NPC
-- Minor NPC
-- Background
-- Relationships
-- Current Status
+ไม่ใช่ Copy ข้อมูล
 
 ---
 
-## 07_ITEMS
-**Items Database**
+# 3. ROOT STRUCTURE
 
-ฐานข้อมูลไอเทม
-
-- Weapons
-- Medical Supplies
-- Tools
-- Food
-- Treasure
-- Equipment
-
----
-
-## 08_DEVIL_FRUITS
-**Devil Fruit Database**
-
-ฐานข้อมูลผลปีศาจทั้งหมด
-
-- Paramecia
-- Zoan
-- Ancient Zoan
-- Mythical Zoan
-- Logia
-
----
-
-## 09_LOGS
-**Campaign Logs**
-
-บันทึกเหตุการณ์
-
-- Session Logs
-- Episode Logs
-- World Events
-- Battle Records
-
----
-
-## 10_SAVE
-**Save Files**
-
-สถานะล่าสุดของโลก
-
-ประกอบด้วย
-
-- Player Status
-- World Status
-- Money
-- Reputation
-- Inventory
-- Quests
-- Relationships
-- Active Events
-
----
-
-## 11_SECRETS
-**GM Hidden Information**
-
-ข้อมูลลับของ Game Master
-
-เช่น
-
-- แผนขององค์กร
-- เนื้อเรื่องในอนาคต
-- NPC Secrets
-- Hidden Locations
-- Plot Hooks
-
-ห้ามเปิดเผยแก่ผู้เล่นจนกว่าจะถึงเวลาที่เหมาะสม
-
----
-
-## 12_CODEX
-**World Encyclopedia**
-
-สารานุกรมของโลก
-
-ใช้เก็บข้อมูลอ้างอิงที่ไม่เปลี่ยนแปลงบ่อย เช่น
-
-- Lore
-- Culture
-- Technology
-- Timeline
-- Terminology
-- Historical Records
-
----
-
-## Design Principles
-
-- ทุกข้อมูลต้องมีที่อยู่ที่ชัดเจน
-- ข้อมูลหนึ่งชุดควรมีเจ้าของเพียงโฟลเดอร์เดียว
-- หลีกเลี่ยงข้อมูลซ้ำ
-- Canon อยู่ใน Repository เป็นหลัก
-- Save ใช้เก็บ "สถานะปัจจุบัน" ไม่ใช่ Canon
-- Logs ใช้เก็บ "ประวัติ" ไม่ใช่สถานะปัจจุบัน
-- Secrets แยกจากข้อมูลทั่วไปเสมอ
+โครงสร้างหลัก:
