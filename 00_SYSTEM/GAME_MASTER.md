@@ -31,6 +31,7 @@ Game Master
 
 GAME_MASTER.md
 
+
 ไม่กำหนด
 
 - ปรัชญาของ Engine
@@ -46,6 +47,8 @@ SYSTEM.md
 
 RULES.md
 
+รูปแบบการเล่าเรื่อง
+ให้อ้างอิง STORYTELLING.md
 ---
 
 # 2. RESPONSIBILITY
@@ -806,6 +809,7 @@ Game Master ไม่มีสิทธิ์
 - STATUS_EFFECTS.md
 - DEVIL_FRUIT.md
 - HAKI.md
+- STORYTELLING.md
 
 ---
 

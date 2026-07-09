@@ -9,7 +9,7 @@ Gender:
 Male
 
 Age:
-24
+20
 
 Race:
 Human
@@ -71,11 +71,13 @@ Never panics.
 
 Always thinks before acting.
 
-He dislikes unnecessary arguments.
+Dislikes unnecessary arguments.
 
-When Ray and Jose disagree, Waru calmly offers a solution instead of taking sides.
+When Ray and Jose disagree, Waru calmly suggests the safest solution instead of taking sides.
 
 People naturally trust his judgment.
+
+---
 
 ## ROLE
 
@@ -111,7 +113,8 @@ Exceptional Situational Awareness
 
 Inu Inu no Mi
 
-Model: Okuchi no Makami
+Model:
+Okuchi no Makami
 
 Type:
 Mythical Zoan
@@ -172,25 +175,29 @@ To chart every sea route in the world.
 
 To create the safest navigation map ever made.
 
+---
+
 ## BACKGROUND
 
-Waru was born on a small island where sailors respected the sea more than they feared it.
+Waru was kidnapped as a child by the organization led by Jose's father. Like many children with exceptional potential, he was forced into military training. Although Jose was also raised by the same organization, the two were assigned to different facilities and grew up without ever meeting.
 
-He studied navigation from childhood and believed every disaster at sea could be prevented through preparation.
+One day, Waru was selected as a sacrifice in an experiment involving a Mythical Zoan Devil Fruit. He was forcibly fed the Inu Inu no Mi, Model: Okuchi no Makami. Against all expectations, he survived, becoming the fruit's owner.
 
-During an expedition, he accidentally ate the Inu Inu no Mi, Model: Okuchi no Makami.
+While the organization tried to turn him into a weapon, Waru found little interest in combat. Instead, he spent every spare moment secretly reading navigation manuals, naval records, weather journals, sea charts, and ship logs hidden inside the military library. Over the years, he studied hundreds of books until he could visualize sea routes, currents, climates, and weather patterns from memory.
 
-Unable to fully control its power, he continued relying on knowledge and experience instead of the fruit.
+Although he had rarely sailed beyond the organization's control, his knowledge of navigation surpassed that of many experienced sailors.
 
-Eventually he met Ray Valence.
+After escaping, Waru wandered alone across the seas until fate brought him to Ray Valence.
 
-Ray never asked how powerful Waru was.
+Ray never asked how strong he was.
 
 He only asked,
 
 "Can you get us home?"
 
-Waru accepted Ray's invitation to travel together.
+For the first time, someone valued Waru not as a weapon, but as a navigator.
+
+Without hesitation, he accepted Ray's invitation to sail together.
 
 ---
 
@@ -204,13 +211,15 @@ Frequently prevents him from making reckless decisions.
 
 Jose Whiteman
 
-Trusts Jose completely.
+Feels an unexplainable sense of familiarity around Jose.
+
+After learning they were both victims of the same organization, he came to trust Jose completely.
 
 Believes Jose's kindness is one of the crew's greatest strengths.
 
 Future Crew
 
-Believes a good crew survives through trust rather than strength alone.
+Believes a crew survives through trust, not strength alone.
 
 ---
 
@@ -219,6 +228,8 @@ Believes a good crew survives through trust rather than strength alone.
 Always wakes before sunrise.
 
 Checks the weather every morning.
+
+Carries a compass wherever he goes.
 
 Keeps detailed navigation logs.
 
